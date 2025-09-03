@@ -10,3 +10,4 @@
 - [2025-09-03 03:38] test(chips): setup component lazy loading
 - [2025-09-03 19:49] chore(viz): enhance deck.gl HexagonLayer parameters
 - [2025-09-04 01:06] feat(ui): update loading globe spinner
+- [2025-09-03 22:53] fix(nav): integrate scale bar formatting
