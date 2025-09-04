@@ -16,3 +16,4 @@
 - [2025-09-04 20:24] perf(api): enable TypeScript strict mode types
 - [2025-09-04 20:42] docs(perf): adjust zoom controls position
 - [2025-09-05 02:07] test(map): refactor hot module replacement
+- [2025-09-04 19:41] chore(search): remove bottom navigation indicator
