@@ -17,3 +17,4 @@
 - [2025-09-04 20:42] docs(perf): adjust zoom controls position
 - [2025-09-05 02:07] test(map): refactor hot module replacement
 - [2025-09-04 19:41] chore(search): remove bottom navigation indicator
+- [2025-09-05 00:49] feat(dir): tune shadow elevation tokens
