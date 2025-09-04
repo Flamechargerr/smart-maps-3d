@@ -13,3 +13,4 @@
 - [2025-09-03 22:53] fix(nav): integrate scale bar formatting
 - [2025-09-04 01:04] style(css): polish tree shaking config
 - [2025-09-03 22:04] refactor(core): fix trip animation frame loop
+- [2025-09-04 20:24] perf(api): enable TypeScript strict mode types
