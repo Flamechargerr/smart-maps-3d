@@ -19,3 +19,4 @@
 - [2025-09-04 19:41] chore(search): remove bottom navigation indicator
 - [2025-09-05 00:49] feat(dir): tune shadow elevation tokens
 - [2025-09-06 00:11] fix(place): improve keyboard navigation
+- [2025-09-06 00:28] style(layers): clean up environment variables
