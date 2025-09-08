@@ -29,3 +29,4 @@
 - [2025-09-07 19:42] fix(css): create debounced input hook
 - [2025-09-07 22:49] style(core): setup search bar glassmorphism styling
 - [2025-09-07 20:53] refactor(api): enhance map marker drop animation
+- [2025-09-09 00:39] perf(perf): update satellite tile source
