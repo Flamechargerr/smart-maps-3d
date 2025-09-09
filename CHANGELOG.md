@@ -33,3 +33,4 @@
 - [2025-09-08 23:35] docs(map): integrate state management flow
 - [2025-09-08 20:48] test(search): polish OSRM routing API handler
 - [2025-09-09 22:55] chore(dir): fix atmospheric vignette overlay
+- [2025-09-09 22:53] feat(place): enable user location control
