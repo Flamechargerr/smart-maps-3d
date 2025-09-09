@@ -32,3 +32,4 @@
 - [2025-09-09 00:39] perf(perf): update satellite tile source
 - [2025-09-08 23:35] docs(map): integrate state management flow
 - [2025-09-08 20:48] test(search): polish OSRM routing API handler
+- [2025-09-09 22:55] chore(dir): fix atmospheric vignette overlay
