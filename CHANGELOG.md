@@ -35,3 +35,4 @@
 - [2025-09-09 22:55] chore(dir): fix atmospheric vignette overlay
 - [2025-09-09 22:53] feat(place): enable user location control
 - [2025-09-09 20:00] fix(layers): adjust bundle size optimization
+- [2025-09-09 20:32] style(app): refactor arc connection color scheme
