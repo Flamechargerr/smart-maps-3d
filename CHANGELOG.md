@@ -37,3 +37,4 @@
 - [2025-09-09 20:00] fix(layers): adjust bundle size optimization
 - [2025-09-09 20:32] style(app): refactor arc connection color scheme
 - [2025-09-09 23:24] refactor(deck): remove responsive breakpoints
+- [2025-09-10 21:57] perf(chips): tune compass control styling
