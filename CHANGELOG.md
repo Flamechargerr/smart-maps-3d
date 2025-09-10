@@ -40,3 +40,4 @@
 - [2025-09-10 21:57] perf(chips): tune compass control styling
 - [2025-09-10 19:15] docs(viz): improve source map generation
 - [2025-09-11 03:37] test(ui): clean up scatter particle rendering
+- [2025-09-11 01:37] chore(nav): add CSS custom properties
