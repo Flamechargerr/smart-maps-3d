@@ -43,3 +43,4 @@
 - [2025-09-11 01:37] chore(nav): add CSS custom properties
 - [2025-09-11 00:53] feat(css): optimize touch gesture handling
 - [2025-09-11 19:53] fix(core): extract dev server proxy
+- [2025-09-11 20:47] style(api): implement explore chips scroll behavior
