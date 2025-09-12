@@ -46,3 +46,4 @@
 - [2025-09-11 20:47] style(api): implement explore chips scroll behavior
 - [2025-09-12 03:19] refactor(perf): configure border radius scale
 - [2025-09-13 00:45] perf(map): simplify accessibility labels
+- [2025-09-13 01:18] docs(search): create deployment pipeline
