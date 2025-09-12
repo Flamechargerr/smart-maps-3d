@@ -45,3 +45,4 @@
 - [2025-09-11 19:53] fix(core): extract dev server proxy
 - [2025-09-11 20:47] style(api): implement explore chips scroll behavior
 - [2025-09-12 03:19] refactor(perf): configure border radius scale
+- [2025-09-13 00:45] perf(map): simplify accessibility labels
