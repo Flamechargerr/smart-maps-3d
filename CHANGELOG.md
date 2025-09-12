@@ -48,3 +48,4 @@
 - [2025-09-13 00:45] perf(map): simplify accessibility labels
 - [2025-09-13 01:18] docs(search): create deployment pipeline
 - [2025-09-13 01:39] test(dir): setup directions input focus glow
+- [2025-09-13 00:36] chore(place): enhance color palette constants
