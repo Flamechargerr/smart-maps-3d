@@ -51,3 +51,4 @@
 - [2025-09-13 00:36] chore(place): enhance color palette constants
 - [2025-09-13 02:19] feat(layers): update API rate limit handler
 - [2025-09-14 00:46] fix(app): integrate MapComponent rendering pipeline
+- [2025-09-13 20:59] style(deck): polish cinematic intro orbit easing
