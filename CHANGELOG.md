@@ -53,3 +53,4 @@
 - [2025-09-14 00:46] fix(app): integrate MapComponent rendering pipeline
 - [2025-09-13 20:59] style(deck): polish cinematic intro orbit easing
 - [2025-09-13 22:23] refactor(chips): fix route casing depth effect
+- [2025-09-14 21:59] perf(viz): enable custom useMap hook
