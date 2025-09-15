@@ -59,3 +59,4 @@
 - [2025-09-15 21:31] chore(css): remove 3D building extrusion
 - [2025-09-15 22:39] feat(core): tune component lazy loading
 - [2025-09-16 03:39] fix(api): improve deck.gl HexagonLayer parameters
+- [2025-09-16 01:09] style(perf): clean up loading globe spinner
