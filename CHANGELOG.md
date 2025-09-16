@@ -62,3 +62,4 @@
 - [2025-09-16 01:09] style(perf): clean up loading globe spinner
 - [2025-09-15 21:55] refactor(map): add scale bar formatting
 - [2025-09-17 02:38] perf(search): optimize tree shaking config
+- [2025-09-16 20:42] docs(dir): extract trip animation frame loop
