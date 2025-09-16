@@ -64,3 +64,4 @@
 - [2025-09-17 02:38] perf(search): optimize tree shaking config
 - [2025-09-16 20:42] docs(dir): extract trip animation frame loop
 - [2025-09-17 00:11] test(place): implement TypeScript strict mode types
+- [2025-09-16 19:54] chore(layers): configure zoom controls position
