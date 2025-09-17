@@ -68,3 +68,4 @@
 - [2025-09-17 22:10] feat(app): simplify hot module replacement
 - [2025-09-17 21:25] fix(deck): create bottom navigation indicator
 - [2025-09-17 23:55] style(chips): setup shadow elevation tokens
+- [2025-09-17 19:57] refactor(viz): enhance keyboard navigation
