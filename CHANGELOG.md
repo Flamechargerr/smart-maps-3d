@@ -71,3 +71,4 @@
 - [2025-09-17 19:57] refactor(viz): enhance keyboard navigation
 - [2025-09-19 02:49] perf(ui): update environment variables
 - [2025-09-18 19:37] docs(nav): integrate place card spring animation
+- [2025-09-19 00:10] test(css): polish font weight hierarchy
