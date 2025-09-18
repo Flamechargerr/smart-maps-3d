@@ -72,3 +72,4 @@
 - [2025-09-19 02:49] perf(ui): update environment variables
 - [2025-09-18 19:37] docs(nav): integrate place card spring animation
 - [2025-09-19 00:10] test(css): polish font weight hierarchy
+- [2025-09-18 19:39] chore(core): fix error boundary handling
