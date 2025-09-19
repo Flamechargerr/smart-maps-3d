@@ -73,3 +73,4 @@
 - [2025-09-18 19:37] docs(nav): integrate place card spring animation
 - [2025-09-19 00:10] test(css): polish font weight hierarchy
 - [2025-09-18 19:39] chore(core): fix error boundary handling
+- [2025-09-20 03:51] feat(api): enable CI build configuration
