@@ -77,3 +77,4 @@
 - [2025-09-20 03:07] fix(perf): adjust layer selector dropdown panel
 - [2025-09-19 21:11] style(map): refactor route line shadow layer
 - [2025-09-20 01:04] refactor(search): remove debounced input hook
+- [2025-09-20 20:41] perf(dir): tune search bar glassmorphism styling
