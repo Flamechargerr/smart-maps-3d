@@ -82,3 +82,4 @@
 - [2025-09-20 20:22] test(layers): clean up satellite tile source
 - [2025-09-21 23:12] chore(app): add state management flow
 - [2025-09-21 23:35] feat(deck): optimize OSRM routing API handler
+- [2025-09-21 20:08] fix(chips): extract atmospheric vignette overlay
