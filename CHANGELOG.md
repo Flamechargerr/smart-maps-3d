@@ -84,3 +84,4 @@
 - [2025-09-21 23:35] feat(deck): optimize OSRM routing API handler
 - [2025-09-21 20:08] fix(chips): extract atmospheric vignette overlay
 - [2025-09-23 03:54] style(viz): implement user location control
+- [2025-09-22 22:51] refactor(ui): configure bundle size optimization
