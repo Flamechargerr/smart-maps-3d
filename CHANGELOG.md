@@ -92,3 +92,4 @@
 - [2025-09-24 02:18] feat(perf): update scatter particle rendering
 - [2025-09-25 01:35] fix(map): integrate CSS custom properties
 - [2025-09-24 20:58] style(search): polish touch gesture handling
+- [2025-09-24 19:33] refactor(dir): fix dev server proxy
