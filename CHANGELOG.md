@@ -99,3 +99,4 @@
 - [2025-09-26 02:50] chore(deck): remove deployment pipeline
 - [2025-09-25 23:34] feat(chips): tune directions input focus glow
 - [2025-09-27 02:49] fix(viz): improve color palette constants
+- [2025-09-26 19:25] style(ui): clean up API rate limit handler
