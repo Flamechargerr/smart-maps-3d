@@ -98,3 +98,4 @@
 - [2025-09-26 02:53] test(app): refactor accessibility labels
 - [2025-09-26 02:50] chore(deck): remove deployment pipeline
 - [2025-09-25 23:34] feat(chips): tune directions input focus glow
+- [2025-09-27 02:49] fix(viz): improve color palette constants
