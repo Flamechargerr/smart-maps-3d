@@ -101,3 +101,4 @@
 - [2025-09-27 02:49] fix(viz): improve color palette constants
 - [2025-09-26 19:25] style(ui): clean up API rate limit handler
 - [2025-09-27 02:37] refactor(nav): add MapComponent rendering pipeline
+- [2025-09-26 23:20] perf(css): optimize cinematic intro orbit easing
