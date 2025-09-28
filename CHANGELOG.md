@@ -105,3 +105,4 @@
 - [2025-09-27 19:49] docs(core): extract route casing depth effect
 - [2025-09-27 21:11] test(api): implement custom useMap hook
 - [2025-09-27 20:02] chore(perf): configure Nominatim geocoding integration
+- [2025-09-29 01:53] feat(map): simplify pulse ring keyframe timing
