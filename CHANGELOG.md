@@ -109,3 +109,4 @@
 - [2025-09-29 04:17] fix(search): create 3D building extrusion
 - [2025-09-30 03:44] style(dir): setup component lazy loading
 - [2025-09-30 03:40] refactor(place): enhance deck.gl HexagonLayer parameters
+- [2025-09-30 01:07] perf(layers): update loading globe spinner
