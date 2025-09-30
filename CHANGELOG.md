@@ -112,3 +112,4 @@
 - [2025-09-30 01:07] perf(layers): update loading globe spinner
 - [2025-09-29 20:08] docs(app): integrate scale bar formatting
 - [2025-09-29 20:27] test(deck): polish tree shaking config
+- [2025-10-01 02:05] chore(chips): fix trip animation frame loop
