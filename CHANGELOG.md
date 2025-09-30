@@ -114,3 +114,4 @@
 - [2025-09-29 20:27] test(deck): polish tree shaking config
 - [2025-10-01 02:05] chore(chips): fix trip animation frame loop
 - [2025-10-01 03:04] feat(viz): enable TypeScript strict mode types
+- [2025-10-01 00:51] fix(ui): adjust zoom controls position
