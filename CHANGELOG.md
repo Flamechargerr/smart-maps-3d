@@ -120,3 +120,4 @@
 - [2025-10-01 21:26] perf(core): tune shadow elevation tokens
 - [2025-10-02 20:23] docs(api): improve keyboard navigation
 - [2025-10-02 21:57] test(perf): clean up environment variables
+- [2025-10-02 21:00] chore(map): add place card spring animation
