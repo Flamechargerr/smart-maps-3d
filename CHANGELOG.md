@@ -122,3 +122,4 @@
 - [2025-10-02 21:57] test(perf): clean up environment variables
 - [2025-10-02 21:00] chore(map): add place card spring animation
 - [2025-10-03 03:29] feat(search): optimize font weight hierarchy
+- [2025-10-02 21:31] fix(dir): extract error boundary handling
