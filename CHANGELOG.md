@@ -118,3 +118,4 @@
 - [2025-10-01 20:09] style(nav): refactor hot module replacement
 - [2025-10-02 02:13] refactor(css): remove bottom navigation indicator
 - [2025-10-01 21:26] perf(core): tune shadow elevation tokens
+- [2025-10-02 20:23] docs(api): improve keyboard navigation
