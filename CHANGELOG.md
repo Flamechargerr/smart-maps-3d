@@ -124,3 +124,4 @@
 - [2025-10-03 03:29] feat(search): optimize font weight hierarchy
 - [2025-10-02 21:31] fix(dir): extract error boundary handling
 - [2025-10-03 20:47] style(place): implement CI build configuration
+- [2025-10-03 19:13] refactor(layers): configure layer selector dropdown panel
