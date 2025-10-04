@@ -129,3 +129,4 @@
 - [2025-10-04 00:26] docs(deck): create debounced input hook
 - [2025-10-05 00:40] test(chips): setup search bar glassmorphism styling
 - [2025-10-04 21:04] chore(viz): enhance map marker drop animation
+- [2025-10-04 22:23] feat(ui): update satellite tile source
