@@ -131,3 +131,4 @@
 - [2025-10-04 21:04] chore(viz): enhance map marker drop animation
 - [2025-10-04 22:23] feat(ui): update satellite tile source
 - [2025-10-05 23:25] fix(nav): integrate state management flow
+- [2025-10-05 20:30] style(css): polish OSRM routing API handler
