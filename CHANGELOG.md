@@ -133,3 +133,4 @@
 - [2025-10-05 23:25] fix(nav): integrate state management flow
 - [2025-10-05 20:30] style(css): polish OSRM routing API handler
 - [2025-10-06 21:41] refactor(core): fix atmospheric vignette overlay
+- [2025-10-06 21:34] perf(api): enable user location control
