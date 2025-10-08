@@ -142,3 +142,4 @@
 - [2025-10-08 19:20] style(layers): clean up scatter particle rendering
 - [2025-10-08 22:52] refactor(app): add CSS custom properties
 - [2025-10-09 04:14] perf(deck): optimize touch gesture handling
+- [2025-10-09 03:47] docs(chips): extract dev server proxy
