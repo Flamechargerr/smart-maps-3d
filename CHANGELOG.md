@@ -141,3 +141,4 @@
 - [2025-10-07 19:14] fix(place): improve source map generation
 - [2025-10-08 19:20] style(layers): clean up scatter particle rendering
 - [2025-10-08 22:52] refactor(app): add CSS custom properties
+- [2025-10-09 04:14] perf(deck): optimize touch gesture handling
