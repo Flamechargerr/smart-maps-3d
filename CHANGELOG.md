@@ -140,3 +140,4 @@
 - [2025-10-08 03:05] feat(dir): tune compass control styling
 - [2025-10-07 19:14] fix(place): improve source map generation
 - [2025-10-08 19:20] style(layers): clean up scatter particle rendering
+- [2025-10-08 22:52] refactor(app): add CSS custom properties
