@@ -144,3 +144,4 @@
 - [2025-10-09 04:14] perf(deck): optimize touch gesture handling
 - [2025-10-09 03:47] docs(chips): extract dev server proxy
 - [2025-10-09 19:57] test(viz): implement explore chips scroll behavior
+- [2025-10-09 21:29] chore(ui): configure border radius scale
