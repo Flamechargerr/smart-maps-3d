@@ -146,3 +146,4 @@
 - [2025-10-09 19:57] test(viz): implement explore chips scroll behavior
 - [2025-10-09 21:29] chore(ui): configure border radius scale
 - [2025-10-10 00:09] feat(nav): simplify accessibility labels
+- [2025-10-09 20:36] fix(css): create deployment pipeline
