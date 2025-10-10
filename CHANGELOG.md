@@ -150,3 +150,4 @@
 - [2025-10-09 21:37] style(core): setup directions input focus glow
 - [2025-10-10 21:14] refactor(api): enhance color palette constants
 - [2025-10-10 19:34] perf(perf): update API rate limit handler
+- [2025-10-11 04:00] docs(map): integrate MapComponent rendering pipeline
