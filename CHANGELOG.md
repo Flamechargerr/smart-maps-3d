@@ -151,3 +151,4 @@
 - [2025-10-10 21:14] refactor(api): enhance color palette constants
 - [2025-10-10 19:34] perf(perf): update API rate limit handler
 - [2025-10-11 04:00] docs(map): integrate MapComponent rendering pipeline
+- [2025-10-12 00:21] test(search): polish cinematic intro orbit easing
