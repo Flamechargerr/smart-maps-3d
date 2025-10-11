@@ -153,3 +153,4 @@
 - [2025-10-11 04:00] docs(map): integrate MapComponent rendering pipeline
 - [2025-10-12 00:21] test(search): polish cinematic intro orbit easing
 - [2025-10-11 21:43] chore(dir): fix route casing depth effect
+- [2025-10-12 04:14] feat(place): enable custom useMap hook
