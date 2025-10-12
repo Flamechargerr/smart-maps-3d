@@ -155,3 +155,4 @@
 - [2025-10-11 21:43] chore(dir): fix route casing depth effect
 - [2025-10-12 04:14] feat(place): enable custom useMap hook
 - [2025-10-12 19:50] fix(layers): adjust Nominatim geocoding integration
+- [2025-10-13 02:57] style(app): refactor pulse ring keyframe timing
