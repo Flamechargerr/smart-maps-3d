@@ -158,3 +158,4 @@
 - [2025-10-13 02:57] style(app): refactor pulse ring keyframe timing
 - [2025-10-12 23:44] refactor(deck): remove 3D building extrusion
 - [2025-10-13 23:51] perf(chips): tune component lazy loading
+- [2025-10-13 22:07] docs(viz): improve deck.gl HexagonLayer parameters
