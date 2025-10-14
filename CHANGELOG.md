@@ -161,3 +161,4 @@
 - [2025-10-13 22:07] docs(viz): improve deck.gl HexagonLayer parameters
 - [2025-10-14 00:41] test(ui): clean up loading globe spinner
 - [2025-10-14 21:01] chore(nav): add scale bar formatting
+- [2025-10-14 23:11] feat(css): optimize tree shaking config
