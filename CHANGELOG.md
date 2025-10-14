@@ -160,3 +160,4 @@
 - [2025-10-13 23:51] perf(chips): tune component lazy loading
 - [2025-10-13 22:07] docs(viz): improve deck.gl HexagonLayer parameters
 - [2025-10-14 00:41] test(ui): clean up loading globe spinner
+- [2025-10-14 21:01] chore(nav): add scale bar formatting
