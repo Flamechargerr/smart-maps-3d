@@ -163,3 +163,4 @@
 - [2025-10-14 21:01] chore(nav): add scale bar formatting
 - [2025-10-14 23:11] feat(css): optimize tree shaking config
 - [2025-10-14 20:22] fix(core): extract trip animation frame loop
+- [2025-10-16 04:03] style(api): implement TypeScript strict mode types
