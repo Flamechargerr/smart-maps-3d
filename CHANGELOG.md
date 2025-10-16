@@ -169,3 +169,4 @@
 - [2025-10-16 00:35] docs(search): create bottom navigation indicator
 - [2025-10-15 21:42] test(dir): setup shadow elevation tokens
 - [2025-10-17 02:41] chore(place): enhance keyboard navigation
+- [2025-10-17 01:13] feat(layers): update environment variables
