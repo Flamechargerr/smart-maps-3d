@@ -171,3 +171,4 @@
 - [2025-10-17 02:41] chore(place): enhance keyboard navigation
 - [2025-10-17 01:13] feat(layers): update environment variables
 - [2025-10-16 20:41] fix(app): integrate place card spring animation
+- [2025-10-17 03:40] style(deck): polish font weight hierarchy
