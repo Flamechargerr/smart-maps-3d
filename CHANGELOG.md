@@ -176,3 +176,4 @@
 - [2025-10-18 00:35] perf(viz): enable CI build configuration
 - [2025-10-18 02:50] docs(ui): adjust layer selector dropdown panel
 - [2025-10-17 23:35] test(nav): refactor route line shadow layer
+- [2025-10-18 04:10] chore(css): remove debounced input hook
