@@ -174,3 +174,4 @@
 - [2025-10-17 03:40] style(deck): polish font weight hierarchy
 - [2025-10-17 04:15] refactor(chips): fix error boundary handling
 - [2025-10-18 00:35] perf(viz): enable CI build configuration
+- [2025-10-18 02:50] docs(ui): adjust layer selector dropdown panel
