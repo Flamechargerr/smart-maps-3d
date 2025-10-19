@@ -180,3 +180,4 @@
 - [2025-10-19 00:23] feat(core): tune search bar glassmorphism styling
 - [2025-10-19 02:49] fix(api): improve map marker drop animation
 - [2025-10-19 04:04] style(perf): clean up satellite tile source
+- [2025-10-20 00:35] refactor(map): add state management flow
