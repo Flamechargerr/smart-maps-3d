@@ -184,3 +184,4 @@
 - [2025-10-20 01:55] perf(search): optimize OSRM routing API handler
 - [2025-10-20 22:27] docs(dir): extract atmospheric vignette overlay
 - [2025-10-20 23:23] test(place): implement user location control
+- [2025-10-20 21:43] chore(layers): configure bundle size optimization
