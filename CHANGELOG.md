@@ -182,3 +182,4 @@
 - [2025-10-19 04:04] style(perf): clean up satellite tile source
 - [2025-10-20 00:35] refactor(map): add state management flow
 - [2025-10-20 01:55] perf(search): optimize OSRM routing API handler
+- [2025-10-20 22:27] docs(dir): extract atmospheric vignette overlay
