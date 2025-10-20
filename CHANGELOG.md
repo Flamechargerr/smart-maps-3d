@@ -183,3 +183,4 @@
 - [2025-10-20 00:35] refactor(map): add state management flow
 - [2025-10-20 01:55] perf(search): optimize OSRM routing API handler
 - [2025-10-20 22:27] docs(dir): extract atmospheric vignette overlay
+- [2025-10-20 23:23] test(place): implement user location control
