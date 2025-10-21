@@ -187,3 +187,4 @@
 - [2025-10-20 21:43] chore(layers): configure bundle size optimization
 - [2025-10-20 23:02] feat(app): simplify arc connection color scheme
 - [2025-10-20 20:37] fix(deck): create responsive breakpoints
+- [2025-10-21 20:14] style(chips): setup compass control styling
