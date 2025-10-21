@@ -191,3 +191,4 @@
 - [2025-10-22 00:18] refactor(viz): enhance source map generation
 - [2025-10-22 01:45] perf(ui): update scatter particle rendering
 - [2025-10-21 21:43] docs(nav): integrate CSS custom properties
+- [2025-10-21 20:16] test(css): polish touch gesture handling
