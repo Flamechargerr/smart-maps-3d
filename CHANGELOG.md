@@ -192,3 +192,4 @@
 - [2025-10-22 01:45] perf(ui): update scatter particle rendering
 - [2025-10-21 21:43] docs(nav): integrate CSS custom properties
 - [2025-10-21 20:16] test(css): polish touch gesture handling
+- [2025-10-23 01:51] chore(core): fix dev server proxy
