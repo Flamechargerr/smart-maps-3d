@@ -195,3 +195,4 @@
 - [2025-10-23 01:51] chore(core): fix dev server proxy
 - [2025-10-23 00:41] feat(api): enable explore chips scroll behavior
 - [2025-10-23 00:22] fix(perf): adjust border radius scale
+- [2025-10-22 21:52] style(map): refactor accessibility labels
