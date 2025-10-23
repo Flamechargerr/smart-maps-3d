@@ -198,3 +198,4 @@
 - [2025-10-22 21:52] style(map): refactor accessibility labels
 - [2025-10-24 00:24] refactor(search): remove deployment pipeline
 - [2025-10-23 23:54] perf(dir): tune directions input focus glow
+- [2025-10-23 21:55] docs(place): improve color palette constants
