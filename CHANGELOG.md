@@ -200,3 +200,4 @@
 - [2025-10-23 23:54] perf(dir): tune directions input focus glow
 - [2025-10-23 21:55] docs(place): improve color palette constants
 - [2025-10-23 21:17] test(layers): clean up API rate limit handler
+- [2025-10-24 00:21] chore(app): add MapComponent rendering pipeline
