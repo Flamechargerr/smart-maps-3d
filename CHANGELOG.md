@@ -202,3 +202,4 @@
 - [2025-10-23 21:17] test(layers): clean up API rate limit handler
 - [2025-10-24 00:21] chore(app): add MapComponent rendering pipeline
 - [2025-10-24 23:10] feat(deck): optimize cinematic intro orbit easing
+- [2025-10-25 02:53] fix(chips): extract route casing depth effect
