@@ -208,3 +208,4 @@
 - [2025-10-26 02:02] perf(nav): simplify pulse ring keyframe timing
 - [2025-10-27 00:57] docs(css): create 3D building extrusion
 - [2025-10-27 03:13] test(core): setup component lazy loading
+- [2025-10-28 04:12] chore(api): enhance deck.gl HexagonLayer parameters
