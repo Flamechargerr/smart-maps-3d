@@ -212,3 +212,4 @@
 - [2025-10-27 22:40] feat(perf): update loading globe spinner
 - [2025-10-27 20:43] fix(map): integrate scale bar formatting
 - [2025-10-28 22:31] style(search): polish tree shaking config
+- [2025-10-28 23:39] refactor(dir): fix trip animation frame loop
