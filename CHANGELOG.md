@@ -215,3 +215,4 @@
 - [2025-10-28 23:39] refactor(dir): fix trip animation frame loop
 - [2025-10-28 22:29] perf(place): enable TypeScript strict mode types
 - [2025-10-28 19:55] docs(layers): adjust zoom controls position
+- [2025-10-28 22:27] test(app): refactor hot module replacement
