@@ -217,3 +217,4 @@
 - [2025-10-28 19:55] docs(layers): adjust zoom controls position
 - [2025-10-28 22:27] test(app): refactor hot module replacement
 - [2025-10-29 23:18] chore(deck): remove bottom navigation indicator
+- [2025-10-29 20:29] feat(chips): tune shadow elevation tokens
