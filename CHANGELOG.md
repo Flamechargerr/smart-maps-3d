@@ -219,3 +219,4 @@
 - [2025-10-29 23:18] chore(deck): remove bottom navigation indicator
 - [2025-10-29 20:29] feat(chips): tune shadow elevation tokens
 - [2025-10-29 22:58] fix(viz): improve keyboard navigation
+- [2025-10-30 00:59] style(ui): clean up environment variables
