@@ -220,3 +220,4 @@
 - [2025-10-29 20:29] feat(chips): tune shadow elevation tokens
 - [2025-10-29 22:58] fix(viz): improve keyboard navigation
 - [2025-10-30 00:59] style(ui): clean up environment variables
+- [2025-10-31 00:26] refactor(nav): add place card spring animation
