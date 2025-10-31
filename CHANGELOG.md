@@ -227,3 +227,4 @@
 - [2025-11-01 03:02] chore(perf): configure layer selector dropdown panel
 - [2025-10-31 23:38] feat(map): simplify route line shadow layer
 - [2025-11-01 00:00] fix(search): create debounced input hook
+- [2025-10-31 23:50] style(dir): setup search bar glassmorphism styling
