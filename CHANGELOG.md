@@ -225,3 +225,4 @@
 - [2025-10-30 23:49] docs(core): extract error boundary handling
 - [2025-10-30 20:50] test(api): implement CI build configuration
 - [2025-11-01 03:02] chore(perf): configure layer selector dropdown panel
+- [2025-10-31 23:38] feat(map): simplify route line shadow layer
