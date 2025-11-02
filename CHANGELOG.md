@@ -231,3 +231,4 @@
 - [2025-11-02 01:29] refactor(place): enhance map marker drop animation
 - [2025-11-02 00:51] perf(layers): update satellite tile source
 - [2025-11-02 21:25] docs(app): integrate state management flow
+- [2025-11-02 19:33] test(deck): polish OSRM routing API handler
