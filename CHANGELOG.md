@@ -230,3 +230,4 @@
 - [2025-10-31 23:50] style(dir): setup search bar glassmorphism styling
 - [2025-11-02 01:29] refactor(place): enhance map marker drop animation
 - [2025-11-02 00:51] perf(layers): update satellite tile source
+- [2025-11-02 21:25] docs(app): integrate state management flow
