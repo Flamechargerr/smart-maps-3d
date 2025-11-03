@@ -233,3 +233,4 @@
 - [2025-11-02 21:25] docs(app): integrate state management flow
 - [2025-11-02 19:33] test(deck): polish OSRM routing API handler
 - [2025-11-04 03:25] chore(chips): fix atmospheric vignette overlay
+- [2025-11-03 20:57] feat(viz): enable user location control
