@@ -234,3 +234,4 @@
 - [2025-11-02 19:33] test(deck): polish OSRM routing API handler
 - [2025-11-04 03:25] chore(chips): fix atmospheric vignette overlay
 - [2025-11-03 20:57] feat(viz): enable user location control
+- [2025-11-04 03:14] fix(ui): adjust bundle size optimization
