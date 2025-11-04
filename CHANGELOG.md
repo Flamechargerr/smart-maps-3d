@@ -237,3 +237,4 @@
 - [2025-11-04 03:14] fix(ui): adjust bundle size optimization
 - [2025-11-04 23:58] style(nav): refactor arc connection color scheme
 - [2025-11-05 01:54] refactor(css): remove responsive breakpoints
+- [2025-11-04 19:21] perf(core): tune compass control styling
