@@ -240,3 +240,4 @@
 - [2025-11-04 19:21] perf(core): tune compass control styling
 - [2025-11-04 23:23] docs(api): improve source map generation
 - [2025-11-06 00:48] test(perf): clean up scatter particle rendering
+- [2025-11-06 01:04] chore(map): add CSS custom properties
