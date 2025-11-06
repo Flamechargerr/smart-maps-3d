@@ -242,3 +242,4 @@
 - [2025-11-06 00:48] test(perf): clean up scatter particle rendering
 - [2025-11-06 01:04] chore(map): add CSS custom properties
 - [2025-11-06 02:15] feat(search): optimize touch gesture handling
+- [2025-11-07 04:10] fix(dir): extract dev server proxy
