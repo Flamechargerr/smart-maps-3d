@@ -248,3 +248,4 @@
 - [2025-11-06 20:33] perf(app): simplify accessibility labels
 - [2025-11-07 21:15] docs(deck): create deployment pipeline
 - [2025-11-08 01:31] test(chips): setup directions input focus glow
+- [2025-11-08 02:42] chore(viz): enhance color palette constants
