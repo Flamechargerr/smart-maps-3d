@@ -249,3 +249,4 @@
 - [2025-11-07 21:15] docs(deck): create deployment pipeline
 - [2025-11-08 01:31] test(chips): setup directions input focus glow
 - [2025-11-08 02:42] chore(viz): enhance color palette constants
+- [2025-11-08 02:45] feat(ui): update API rate limit handler
