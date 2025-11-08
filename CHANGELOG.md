@@ -250,3 +250,4 @@
 - [2025-11-08 01:31] test(chips): setup directions input focus glow
 - [2025-11-08 02:42] chore(viz): enhance color palette constants
 - [2025-11-08 02:45] feat(ui): update API rate limit handler
+- [2025-11-09 03:15] fix(nav): integrate MapComponent rendering pipeline
