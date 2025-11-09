@@ -254,3 +254,4 @@
 - [2025-11-08 23:13] style(css): polish cinematic intro orbit easing
 - [2025-11-08 23:30] refactor(core): fix route casing depth effect
 - [2025-11-10 02:59] perf(api): enable custom useMap hook
+- [2025-11-10 02:19] docs(perf): adjust Nominatim geocoding integration
