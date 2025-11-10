@@ -257,3 +257,4 @@
 - [2025-11-10 02:19] docs(perf): adjust Nominatim geocoding integration
 - [2025-11-10 03:15] test(map): refactor pulse ring keyframe timing
 - [2025-11-11 02:14] chore(search): remove 3D building extrusion
+- [2025-11-10 21:18] feat(dir): tune component lazy loading
