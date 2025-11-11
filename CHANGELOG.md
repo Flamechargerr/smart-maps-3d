@@ -264,3 +264,4 @@
 - [2025-11-11 19:18] perf(deck): optimize tree shaking config
 - [2025-11-12 00:12] docs(chips): extract trip animation frame loop
 - [2025-11-12 00:39] test(viz): implement TypeScript strict mode types
+- [2025-11-11 22:39] chore(ui): configure zoom controls position
