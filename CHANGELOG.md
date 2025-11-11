@@ -262,3 +262,4 @@
 - [2025-11-10 22:21] style(layers): clean up loading globe spinner
 - [2025-11-11 00:11] refactor(app): add scale bar formatting
 - [2025-11-11 19:18] perf(deck): optimize tree shaking config
+- [2025-11-12 00:12] docs(chips): extract trip animation frame loop
