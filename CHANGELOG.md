@@ -266,3 +266,4 @@
 - [2025-11-12 00:39] test(viz): implement TypeScript strict mode types
 - [2025-11-11 22:39] chore(ui): configure zoom controls position
 - [2025-11-12 20:53] feat(nav): simplify hot module replacement
+- [2025-11-13 00:40] fix(css): create bottom navigation indicator
