@@ -269,3 +269,4 @@
 - [2025-11-13 00:40] fix(css): create bottom navigation indicator
 - [2025-11-13 03:15] style(core): setup shadow elevation tokens
 - [2025-11-13 23:26] refactor(api): enhance keyboard navigation
+- [2025-11-13 23:03] perf(perf): update environment variables
