@@ -271,3 +271,4 @@
 - [2025-11-13 23:26] refactor(api): enhance keyboard navigation
 - [2025-11-13 23:03] perf(perf): update environment variables
 - [2025-11-14 00:18] docs(map): integrate place card spring animation
+- [2025-11-13 23:44] test(search): polish font weight hierarchy
