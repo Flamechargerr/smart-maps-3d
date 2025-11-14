@@ -276,3 +276,4 @@
 - [2025-11-14 22:52] feat(place): enable CI build configuration
 - [2025-11-14 19:40] fix(layers): adjust layer selector dropdown panel
 - [2025-11-14 22:25] style(app): refactor route line shadow layer
+- [2025-11-14 22:26] refactor(deck): remove debounced input hook
