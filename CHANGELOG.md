@@ -273,3 +273,4 @@
 - [2025-11-14 00:18] docs(map): integrate place card spring animation
 - [2025-11-13 23:44] test(search): polish font weight hierarchy
 - [2025-11-14 00:03] chore(dir): fix error boundary handling
+- [2025-11-14 22:52] feat(place): enable CI build configuration
