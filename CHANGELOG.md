@@ -279,3 +279,4 @@
 - [2025-11-14 22:26] refactor(deck): remove debounced input hook
 - [2025-11-15 22:50] perf(chips): tune search bar glassmorphism styling
 - [2025-11-16 01:31] docs(viz): improve map marker drop animation
+- [2025-11-15 22:59] test(ui): clean up satellite tile source
