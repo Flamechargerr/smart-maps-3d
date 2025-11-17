@@ -285,3 +285,4 @@
 - [2025-11-17 23:00] fix(core): extract atmospheric vignette overlay
 - [2025-11-18 00:38] style(api): implement user location control
 - [2025-11-18 03:37] refactor(perf): configure bundle size optimization
+- [2025-11-17 23:52] perf(map): simplify arc connection color scheme
