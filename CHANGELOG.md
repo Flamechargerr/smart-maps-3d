@@ -283,3 +283,4 @@
 - [2025-11-16 22:17] chore(nav): add state management flow
 - [2025-11-16 22:04] feat(css): optimize OSRM routing API handler
 - [2025-11-17 23:00] fix(core): extract atmospheric vignette overlay
+- [2025-11-18 00:38] style(api): implement user location control
