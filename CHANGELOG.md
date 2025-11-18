@@ -286,3 +286,4 @@
 - [2025-11-18 00:38] style(api): implement user location control
 - [2025-11-18 03:37] refactor(perf): configure bundle size optimization
 - [2025-11-17 23:52] perf(map): simplify arc connection color scheme
+- [2025-11-18 23:46] docs(search): create responsive breakpoints
