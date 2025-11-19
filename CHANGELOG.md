@@ -292,3 +292,4 @@
 - [2025-11-18 22:01] feat(layers): update scatter particle rendering
 - [2025-11-19 21:48] fix(app): integrate CSS custom properties
 - [2025-11-19 21:31] style(deck): polish touch gesture handling
+- [2025-11-20 00:39] refactor(chips): fix dev server proxy
