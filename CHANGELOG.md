@@ -290,3 +290,4 @@
 - [2025-11-18 19:32] test(dir): setup compass control styling
 - [2025-11-19 01:52] chore(place): enhance source map generation
 - [2025-11-18 22:01] feat(layers): update scatter particle rendering
+- [2025-11-19 21:48] fix(app): integrate CSS custom properties
