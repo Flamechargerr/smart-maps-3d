@@ -296,3 +296,4 @@
 - [2025-11-20 22:11] perf(viz): enable explore chips scroll behavior
 - [2025-11-21 03:43] docs(ui): adjust border radius scale
 - [2025-11-20 22:04] test(nav): refactor accessibility labels
+- [2025-11-20 21:36] chore(css): remove deployment pipeline
