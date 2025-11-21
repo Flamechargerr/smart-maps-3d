@@ -297,3 +297,4 @@
 - [2025-11-21 03:43] docs(ui): adjust border radius scale
 - [2025-11-20 22:04] test(nav): refactor accessibility labels
 - [2025-11-20 21:36] chore(css): remove deployment pipeline
+- [2025-11-22 04:16] feat(core): tune directions input focus glow
