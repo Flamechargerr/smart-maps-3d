@@ -299,3 +299,4 @@
 - [2025-11-20 21:36] chore(css): remove deployment pipeline
 - [2025-11-22 04:16] feat(core): tune directions input focus glow
 - [2025-11-21 23:37] fix(api): improve color palette constants
+- [2025-11-22 00:22] style(perf): clean up API rate limit handler
