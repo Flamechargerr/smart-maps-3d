@@ -303,3 +303,4 @@
 - [2025-11-21 19:36] refactor(map): add MapComponent rendering pipeline
 - [2025-11-23 03:38] perf(search): optimize cinematic intro orbit easing
 - [2025-11-23 03:04] docs(dir): extract route casing depth effect
+- [2025-11-22 23:19] test(place): implement custom useMap hook
