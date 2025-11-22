@@ -301,3 +301,4 @@
 - [2025-11-21 23:37] fix(api): improve color palette constants
 - [2025-11-22 00:22] style(perf): clean up API rate limit handler
 - [2025-11-21 19:36] refactor(map): add MapComponent rendering pipeline
+- [2025-11-23 03:38] perf(search): optimize cinematic intro orbit easing
