@@ -304,3 +304,4 @@
 - [2025-11-23 03:38] perf(search): optimize cinematic intro orbit easing
 - [2025-11-23 03:04] docs(dir): extract route casing depth effect
 - [2025-11-22 23:19] test(place): implement custom useMap hook
+- [2025-11-23 22:10] chore(layers): configure Nominatim geocoding integration
