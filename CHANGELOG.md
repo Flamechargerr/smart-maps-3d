@@ -306,3 +306,4 @@
 - [2025-11-22 23:19] test(place): implement custom useMap hook
 - [2025-11-23 22:10] chore(layers): configure Nominatim geocoding integration
 - [2025-11-24 01:02] feat(app): simplify pulse ring keyframe timing
+- [2025-11-24 22:09] fix(deck): create 3D building extrusion
