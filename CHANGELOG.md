@@ -311,3 +311,4 @@
 - [2025-11-24 21:05] refactor(viz): enhance deck.gl HexagonLayer parameters
 - [2025-11-26 01:58] perf(ui): update loading globe spinner
 - [2025-11-25 22:28] docs(nav): integrate scale bar formatting
+- [2025-11-26 04:10] test(css): polish tree shaking config
