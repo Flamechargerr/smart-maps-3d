@@ -312,3 +312,4 @@
 - [2025-11-26 01:58] perf(ui): update loading globe spinner
 - [2025-11-25 22:28] docs(nav): integrate scale bar formatting
 - [2025-11-26 04:10] test(css): polish tree shaking config
+- [2025-11-25 23:55] chore(core): fix trip animation frame loop
