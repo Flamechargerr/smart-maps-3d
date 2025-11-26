@@ -314,3 +314,4 @@
 - [2025-11-26 04:10] test(css): polish tree shaking config
 - [2025-11-25 23:55] chore(core): fix trip animation frame loop
 - [2025-11-27 02:40] feat(api): enable TypeScript strict mode types
+- [2025-11-27 04:11] fix(perf): adjust zoom controls position
