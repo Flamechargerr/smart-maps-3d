@@ -316,3 +316,4 @@
 - [2025-11-27 02:40] feat(api): enable TypeScript strict mode types
 - [2025-11-27 04:11] fix(perf): adjust zoom controls position
 - [2025-11-27 04:01] style(map): refactor hot module replacement
+- [2025-11-27 02:21] refactor(search): remove bottom navigation indicator
