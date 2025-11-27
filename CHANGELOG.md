@@ -321,3 +321,4 @@
 - [2025-11-28 01:40] docs(place): improve keyboard navigation
 - [2025-11-28 02:07] test(layers): clean up environment variables
 - [2025-11-28 02:04] chore(app): add place card spring animation
+- [2025-11-27 19:51] feat(deck): optimize font weight hierarchy
