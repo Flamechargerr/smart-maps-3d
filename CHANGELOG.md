@@ -323,3 +323,4 @@
 - [2025-11-28 02:04] chore(app): add place card spring animation
 - [2025-11-27 19:51] feat(deck): optimize font weight hierarchy
 - [2025-11-28 21:39] fix(chips): extract error boundary handling
+- [2025-11-29 01:58] style(viz): implement CI build configuration
