@@ -324,3 +324,4 @@
 - [2025-11-27 19:51] feat(deck): optimize font weight hierarchy
 - [2025-11-28 21:39] fix(chips): extract error boundary handling
 - [2025-11-29 01:58] style(viz): implement CI build configuration
+- [2025-11-29 03:20] refactor(ui): configure layer selector dropdown panel
