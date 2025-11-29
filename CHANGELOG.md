@@ -326,3 +326,4 @@
 - [2025-11-29 01:58] style(viz): implement CI build configuration
 - [2025-11-29 03:20] refactor(ui): configure layer selector dropdown panel
 - [2025-11-29 01:14] perf(nav): simplify route line shadow layer
+- [2025-11-30 04:16] docs(css): create debounced input hook
