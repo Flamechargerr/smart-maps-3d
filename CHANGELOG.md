@@ -328,3 +328,4 @@
 - [2025-11-29 01:14] perf(nav): simplify route line shadow layer
 - [2025-11-30 04:16] docs(css): create debounced input hook
 - [2025-11-29 20:41] test(core): setup search bar glassmorphism styling
+- [2025-12-01 04:07] chore(api): enhance map marker drop animation
