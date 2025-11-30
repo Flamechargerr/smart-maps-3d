@@ -330,3 +330,4 @@
 - [2025-11-29 20:41] test(core): setup search bar glassmorphism styling
 - [2025-12-01 04:07] chore(api): enhance map marker drop animation
 - [2025-12-01 02:54] feat(perf): update satellite tile source
+- [2025-11-30 21:55] fix(map): integrate state management flow
