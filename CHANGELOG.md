@@ -333,3 +333,4 @@
 - [2025-11-30 21:55] fix(map): integrate state management flow
 - [2025-12-01 21:15] style(search): polish OSRM routing API handler
 - [2025-12-02 03:26] refactor(dir): fix atmospheric vignette overlay
+- [2025-12-01 22:02] perf(place): enable user location control
