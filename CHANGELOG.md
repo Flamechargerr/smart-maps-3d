@@ -331,3 +331,4 @@
 - [2025-12-01 04:07] chore(api): enhance map marker drop animation
 - [2025-12-01 02:54] feat(perf): update satellite tile source
 - [2025-11-30 21:55] fix(map): integrate state management flow
+- [2025-12-01 21:15] style(search): polish OSRM routing API handler
