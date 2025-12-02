@@ -335,3 +335,4 @@
 - [2025-12-02 03:26] refactor(dir): fix atmospheric vignette overlay
 - [2025-12-01 22:02] perf(place): enable user location control
 - [2025-12-02 21:01] docs(layers): adjust bundle size optimization
+- [2025-12-02 20:37] test(app): refactor arc connection color scheme
