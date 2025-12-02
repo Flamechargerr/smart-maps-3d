@@ -334,3 +334,4 @@
 - [2025-12-01 21:15] style(search): polish OSRM routing API handler
 - [2025-12-02 03:26] refactor(dir): fix atmospheric vignette overlay
 - [2025-12-01 22:02] perf(place): enable user location control
+- [2025-12-02 21:01] docs(layers): adjust bundle size optimization
