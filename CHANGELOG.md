@@ -340,3 +340,4 @@
 - [2025-12-02 20:23] feat(chips): tune compass control styling
 - [2025-12-03 19:21] fix(viz): improve source map generation
 - [2025-12-03 22:13] style(ui): clean up scatter particle rendering
+- [2025-12-04 02:55] refactor(nav): add CSS custom properties
