@@ -342,3 +342,4 @@
 - [2025-12-03 22:13] style(ui): clean up scatter particle rendering
 - [2025-12-04 02:55] refactor(nav): add CSS custom properties
 - [2025-12-04 03:55] perf(css): optimize touch gesture handling
+- [2025-12-04 02:04] docs(core): extract dev server proxy
