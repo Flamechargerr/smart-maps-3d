@@ -346,3 +346,4 @@
 - [2025-12-04 22:49] test(api): implement explore chips scroll behavior
 - [2025-12-05 04:01] chore(perf): configure border radius scale
 - [2025-12-04 19:48] feat(map): simplify accessibility labels
+- [2025-12-05 23:31] fix(search): create deployment pipeline
