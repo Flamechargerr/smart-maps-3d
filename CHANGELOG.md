@@ -349,3 +349,4 @@
 - [2025-12-05 23:31] fix(search): create deployment pipeline
 - [2025-12-05 20:30] style(dir): setup directions input focus glow
 - [2025-12-05 20:55] refactor(place): enhance color palette constants
+- [2025-12-05 19:17] perf(layers): update API rate limit handler
