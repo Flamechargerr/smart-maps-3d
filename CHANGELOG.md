@@ -353,3 +353,4 @@
 - [2025-12-06 21:09] docs(app): integrate MapComponent rendering pipeline
 - [2025-12-06 22:34] test(deck): polish cinematic intro orbit easing
 - [2025-12-07 00:14] chore(chips): fix route casing depth effect
+- [2025-12-07 23:54] feat(viz): enable custom useMap hook
