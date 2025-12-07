@@ -354,3 +354,4 @@
 - [2025-12-06 22:34] test(deck): polish cinematic intro orbit easing
 - [2025-12-07 00:14] chore(chips): fix route casing depth effect
 - [2025-12-07 23:54] feat(viz): enable custom useMap hook
+- [2025-12-07 19:37] fix(ui): adjust Nominatim geocoding integration
