@@ -355,3 +355,4 @@
 - [2025-12-07 00:14] chore(chips): fix route casing depth effect
 - [2025-12-07 23:54] feat(viz): enable custom useMap hook
 - [2025-12-07 19:37] fix(ui): adjust Nominatim geocoding integration
+- [2025-12-09 00:02] style(nav): refactor pulse ring keyframe timing
