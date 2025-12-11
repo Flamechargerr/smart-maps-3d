@@ -367,3 +367,4 @@
 - [2025-12-11 03:15] refactor(layers): configure zoom controls position
 - [2025-12-10 20:25] perf(app): simplify hot module replacement
 - [2025-12-12 01:03] docs(deck): create bottom navigation indicator
+- [2025-12-11 22:18] test(chips): setup shadow elevation tokens
