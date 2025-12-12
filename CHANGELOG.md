@@ -371,3 +371,4 @@
 - [2025-12-11 21:37] chore(viz): enhance keyboard navigation
 - [2025-12-12 21:47] feat(ui): update environment variables
 - [2025-12-12 22:27] fix(nav): integrate place card spring animation
+- [2025-12-13 00:35] style(css): polish font weight hierarchy
