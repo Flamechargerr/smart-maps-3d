@@ -369,3 +369,4 @@
 - [2025-12-12 01:03] docs(deck): create bottom navigation indicator
 - [2025-12-11 22:18] test(chips): setup shadow elevation tokens
 - [2025-12-11 21:37] chore(viz): enhance keyboard navigation
+- [2025-12-12 21:47] feat(ui): update environment variables
