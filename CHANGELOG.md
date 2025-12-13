@@ -374,3 +374,4 @@
 - [2025-12-13 00:35] style(css): polish font weight hierarchy
 - [2025-12-13 01:11] refactor(core): fix error boundary handling
 - [2025-12-13 22:33] perf(api): enable CI build configuration
+- [2025-12-13 23:45] docs(perf): adjust layer selector dropdown panel
