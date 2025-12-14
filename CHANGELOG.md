@@ -376,3 +376,4 @@
 - [2025-12-13 22:33] perf(api): enable CI build configuration
 - [2025-12-13 23:45] docs(perf): adjust layer selector dropdown panel
 - [2025-12-15 03:30] test(map): refactor route line shadow layer
+- [2025-12-14 21:35] chore(search): remove debounced input hook
