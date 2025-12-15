@@ -380,3 +380,4 @@
 - [2025-12-14 22:29] feat(dir): tune search bar glassmorphism styling
 - [2025-12-15 23:41] fix(place): improve map marker drop animation
 - [2025-12-15 19:35] style(layers): clean up satellite tile source
+- [2025-12-15 22:40] refactor(app): add state management flow
