@@ -379,3 +379,4 @@
 - [2025-12-14 21:35] chore(search): remove debounced input hook
 - [2025-12-14 22:29] feat(dir): tune search bar glassmorphism styling
 - [2025-12-15 23:41] fix(place): improve map marker drop animation
+- [2025-12-15 19:35] style(layers): clean up satellite tile source
