@@ -384,3 +384,4 @@
 - [2025-12-16 01:29] perf(deck): optimize OSRM routing API handler
 - [2025-12-16 23:33] docs(chips): extract atmospheric vignette overlay
 - [2025-12-16 21:38] test(viz): implement user location control
+- [2025-12-16 21:18] chore(ui): configure bundle size optimization
