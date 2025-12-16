@@ -382,3 +382,4 @@
 - [2025-12-15 19:35] style(layers): clean up satellite tile source
 - [2025-12-15 22:40] refactor(app): add state management flow
 - [2025-12-16 01:29] perf(deck): optimize OSRM routing API handler
+- [2025-12-16 23:33] docs(chips): extract atmospheric vignette overlay
