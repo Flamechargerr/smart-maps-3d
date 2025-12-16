@@ -385,3 +385,4 @@
 - [2025-12-16 23:33] docs(chips): extract atmospheric vignette overlay
 - [2025-12-16 21:38] test(viz): implement user location control
 - [2025-12-16 21:18] chore(ui): configure bundle size optimization
+- [2025-12-16 20:17] feat(nav): simplify arc connection color scheme
