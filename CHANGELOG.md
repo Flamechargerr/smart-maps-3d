@@ -390,3 +390,4 @@
 - [2025-12-17 19:19] style(core): setup compass control styling
 - [2025-12-17 20:02] refactor(api): enhance source map generation
 - [2025-12-17 22:29] perf(perf): update scatter particle rendering
+- [2025-12-18 00:56] docs(map): integrate CSS custom properties
