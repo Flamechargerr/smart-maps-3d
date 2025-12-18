@@ -394,3 +394,4 @@
 - [2025-12-19 03:46] test(search): polish touch gesture handling
 - [2025-12-19 03:18] chore(dir): fix dev server proxy
 - [2025-12-18 21:50] feat(place): enable explore chips scroll behavior
+- [2025-12-19 03:42] fix(layers): adjust border radius scale
