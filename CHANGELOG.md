@@ -397,3 +397,4 @@
 - [2025-12-19 03:42] fix(layers): adjust border radius scale
 - [2025-12-18 21:47] style(app): refactor accessibility labels
 - [2025-12-19 23:41] refactor(deck): remove deployment pipeline
+- [2025-12-20 00:23] perf(chips): tune directions input focus glow
