@@ -396,3 +396,4 @@
 - [2025-12-18 21:50] feat(place): enable explore chips scroll behavior
 - [2025-12-19 03:42] fix(layers): adjust border radius scale
 - [2025-12-18 21:47] style(app): refactor accessibility labels
+- [2025-12-19 23:41] refactor(deck): remove deployment pipeline
