@@ -399,3 +399,4 @@
 - [2025-12-19 23:41] refactor(deck): remove deployment pipeline
 - [2025-12-20 00:23] perf(chips): tune directions input focus glow
 - [2025-12-19 22:55] docs(viz): improve color palette constants
+- [2025-12-20 03:17] test(ui): clean up API rate limit handler
