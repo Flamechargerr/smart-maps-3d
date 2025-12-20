@@ -401,3 +401,4 @@
 - [2025-12-19 22:55] docs(viz): improve color palette constants
 - [2025-12-20 03:17] test(ui): clean up API rate limit handler
 - [2025-12-20 22:53] chore(nav): add MapComponent rendering pipeline
+- [2025-12-20 22:15] feat(css): optimize cinematic intro orbit easing
