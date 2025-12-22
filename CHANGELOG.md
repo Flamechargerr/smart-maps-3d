@@ -409,3 +409,4 @@
 - [2025-12-22 21:44] docs(search): create 3D building extrusion
 - [2025-12-22 19:52] test(dir): setup component lazy loading
 - [2025-12-23 01:33] chore(place): enhance deck.gl HexagonLayer parameters
+- [2025-12-23 00:00] feat(layers): update loading globe spinner
