@@ -407,3 +407,4 @@
 - [2025-12-21 20:07] refactor(perf): configure Nominatim geocoding integration
 - [2025-12-21 23:36] perf(map): simplify pulse ring keyframe timing
 - [2025-12-22 21:44] docs(search): create 3D building extrusion
+- [2025-12-22 19:52] test(dir): setup component lazy loading
