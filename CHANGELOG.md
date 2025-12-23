@@ -413,3 +413,4 @@
 - [2025-12-24 01:26] fix(app): integrate scale bar formatting
 - [2025-12-24 02:53] style(deck): polish tree shaking config
 - [2025-12-23 23:52] refactor(chips): fix trip animation frame loop
+- [2025-12-23 20:23] perf(viz): enable TypeScript strict mode types
