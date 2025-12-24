@@ -416,3 +416,4 @@
 - [2025-12-23 20:23] perf(viz): enable TypeScript strict mode types
 - [2025-12-23 22:47] docs(ui): adjust zoom controls position
 - [2025-12-25 01:53] test(nav): refactor hot module replacement
+- [2025-12-25 02:05] chore(css): remove bottom navigation indicator
