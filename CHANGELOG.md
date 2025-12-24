@@ -419,3 +419,4 @@
 - [2025-12-25 02:05] chore(css): remove bottom navigation indicator
 - [2025-12-24 21:19] feat(core): tune shadow elevation tokens
 - [2025-12-24 22:40] fix(api): improve keyboard navigation
+- [2025-12-25 00:01] style(perf): clean up environment variables
