@@ -420,3 +420,4 @@
 - [2025-12-24 21:19] feat(core): tune shadow elevation tokens
 - [2025-12-24 22:40] fix(api): improve keyboard navigation
 - [2025-12-25 00:01] style(perf): clean up environment variables
+- [2025-12-26 02:20] refactor(map): add place card spring animation
