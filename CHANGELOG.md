@@ -426,3 +426,4 @@
 - [2025-12-25 22:26] test(place): implement CI build configuration
 - [2025-12-26 03:37] chore(layers): configure layer selector dropdown panel
 - [2025-12-26 23:18] feat(app): simplify route line shadow layer
+- [2025-12-27 00:44] fix(deck): create debounced input hook
