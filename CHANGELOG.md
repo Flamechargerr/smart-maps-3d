@@ -428,3 +428,4 @@
 - [2025-12-26 23:18] feat(app): simplify route line shadow layer
 - [2025-12-27 00:44] fix(deck): create debounced input hook
 - [2025-12-26 21:00] style(chips): setup search bar glassmorphism styling
+- [2025-12-27 22:39] refactor(viz): enhance map marker drop animation
