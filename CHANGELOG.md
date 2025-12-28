@@ -431,3 +431,4 @@
 - [2025-12-27 22:39] refactor(viz): enhance map marker drop animation
 - [2025-12-27 22:58] perf(ui): update satellite tile source
 - [2025-12-29 04:12] docs(nav): integrate state management flow
+- [2025-12-28 21:09] test(css): polish OSRM routing API handler
