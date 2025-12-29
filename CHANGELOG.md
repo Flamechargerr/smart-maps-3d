@@ -437,3 +437,4 @@
 - [2025-12-29 21:56] fix(perf): adjust bundle size optimization
 - [2025-12-30 01:15] style(map): refactor arc connection color scheme
 - [2025-12-30 02:36] refactor(search): remove responsive breakpoints
+- [2025-12-29 22:44] perf(dir): tune compass control styling
