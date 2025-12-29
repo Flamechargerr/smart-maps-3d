@@ -436,3 +436,4 @@
 - [2025-12-30 01:51] feat(api): enable user location control
 - [2025-12-29 21:56] fix(perf): adjust bundle size optimization
 - [2025-12-30 01:15] style(map): refactor arc connection color scheme
+- [2025-12-30 02:36] refactor(search): remove responsive breakpoints
