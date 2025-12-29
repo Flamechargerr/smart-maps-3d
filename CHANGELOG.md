@@ -433,3 +433,4 @@
 - [2025-12-29 04:12] docs(nav): integrate state management flow
 - [2025-12-28 21:09] test(css): polish OSRM routing API handler
 - [2025-12-28 23:36] chore(core): fix atmospheric vignette overlay
+- [2025-12-30 01:51] feat(api): enable user location control
