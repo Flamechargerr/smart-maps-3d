@@ -434,3 +434,4 @@
 - [2025-12-28 21:09] test(css): polish OSRM routing API handler
 - [2025-12-28 23:36] chore(core): fix atmospheric vignette overlay
 - [2025-12-30 01:51] feat(api): enable user location control
+- [2025-12-29 21:56] fix(perf): adjust bundle size optimization
