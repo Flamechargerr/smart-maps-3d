@@ -440,3 +440,4 @@
 - [2025-12-29 22:44] perf(dir): tune compass control styling
 - [2025-12-31 00:28] docs(place): improve source map generation
 - [2025-12-30 21:16] test(layers): clean up scatter particle rendering
+- [2025-12-31 02:15] chore(app): add CSS custom properties
