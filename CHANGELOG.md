@@ -439,3 +439,4 @@
 - [2025-12-30 02:36] refactor(search): remove responsive breakpoints
 - [2025-12-29 22:44] perf(dir): tune compass control styling
 - [2025-12-31 00:28] docs(place): improve source map generation
+- [2025-12-30 21:16] test(layers): clean up scatter particle rendering
