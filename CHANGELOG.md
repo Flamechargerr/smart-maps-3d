@@ -445,3 +445,4 @@
 - [2025-12-31 23:15] fix(chips): extract dev server proxy
 - [2025-12-31 23:05] style(viz): implement explore chips scroll behavior
 - [2025-12-31 20:32] refactor(ui): configure border radius scale
+- [2026-01-01 02:27] perf(nav): simplify accessibility labels
