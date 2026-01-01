@@ -448,3 +448,4 @@
 - [2026-01-01 02:27] perf(nav): simplify accessibility labels
 - [2025-12-31 22:22] docs(css): create deployment pipeline
 - [2026-01-02 03:40] test(core): setup directions input focus glow
+- [2026-01-01 21:07] chore(api): enhance color palette constants
