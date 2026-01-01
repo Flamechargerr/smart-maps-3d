@@ -450,3 +450,4 @@
 - [2026-01-02 03:40] test(core): setup directions input focus glow
 - [2026-01-01 21:07] chore(api): enhance color palette constants
 - [2026-01-01 20:16] feat(perf): update API rate limit handler
+- [2026-01-01 23:11] fix(map): integrate MapComponent rendering pipeline
