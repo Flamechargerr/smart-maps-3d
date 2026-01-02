@@ -451,3 +451,4 @@
 - [2026-01-01 21:07] chore(api): enhance color palette constants
 - [2026-01-01 20:16] feat(perf): update API rate limit handler
 - [2026-01-01 23:11] fix(map): integrate MapComponent rendering pipeline
+- [2026-01-03 04:10] style(search): polish cinematic intro orbit easing
