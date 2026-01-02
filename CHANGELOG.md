@@ -453,3 +453,4 @@
 - [2026-01-01 23:11] fix(map): integrate MapComponent rendering pipeline
 - [2026-01-03 04:10] style(search): polish cinematic intro orbit easing
 - [2026-01-03 03:21] refactor(dir): fix route casing depth effect
+- [2026-01-02 20:19] perf(place): enable custom useMap hook
