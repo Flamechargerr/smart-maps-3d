@@ -456,3 +456,4 @@
 - [2026-01-02 20:19] perf(place): enable custom useMap hook
 - [2026-01-03 00:37] docs(layers): adjust Nominatim geocoding integration
 - [2026-01-03 02:00] test(app): refactor pulse ring keyframe timing
+- [2026-01-03 22:55] chore(deck): remove 3D building extrusion
