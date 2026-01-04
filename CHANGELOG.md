@@ -458,3 +458,4 @@
 - [2026-01-03 02:00] test(app): refactor pulse ring keyframe timing
 - [2026-01-03 22:55] chore(deck): remove 3D building extrusion
 - [2026-01-03 23:54] feat(chips): tune component lazy loading
+- [2026-01-05 00:48] fix(viz): improve deck.gl HexagonLayer parameters
