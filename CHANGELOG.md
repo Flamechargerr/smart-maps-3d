@@ -460,3 +460,4 @@
 - [2026-01-03 23:54] feat(chips): tune component lazy loading
 - [2026-01-05 00:48] fix(viz): improve deck.gl HexagonLayer parameters
 - [2026-01-05 00:28] style(ui): clean up loading globe spinner
+- [2026-01-05 03:23] refactor(nav): add scale bar formatting
