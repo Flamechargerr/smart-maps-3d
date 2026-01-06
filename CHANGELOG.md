@@ -467,3 +467,4 @@
 - [2026-01-06 02:53] chore(perf): configure zoom controls position
 - [2026-01-06 03:31] feat(map): simplify hot module replacement
 - [2026-01-06 22:09] fix(search): create bottom navigation indicator
+- [2026-01-07 00:06] style(dir): setup shadow elevation tokens
