@@ -472,3 +472,4 @@
 - [2026-01-07 22:48] perf(layers): update environment variables
 - [2026-01-08 01:33] docs(app): integrate place card spring animation
 - [2026-01-07 22:40] test(deck): polish font weight hierarchy
+- [2026-01-08 00:50] chore(chips): fix error boundary handling
