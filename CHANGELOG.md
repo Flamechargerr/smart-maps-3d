@@ -470,3 +470,4 @@
 - [2026-01-07 00:06] style(dir): setup shadow elevation tokens
 - [2026-01-07 02:55] refactor(place): enhance keyboard navigation
 - [2026-01-07 22:48] perf(layers): update environment variables
+- [2026-01-08 01:33] docs(app): integrate place card spring animation
