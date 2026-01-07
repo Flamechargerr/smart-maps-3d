@@ -469,3 +469,4 @@
 - [2026-01-06 22:09] fix(search): create bottom navigation indicator
 - [2026-01-07 00:06] style(dir): setup shadow elevation tokens
 - [2026-01-07 02:55] refactor(place): enhance keyboard navigation
+- [2026-01-07 22:48] perf(layers): update environment variables
