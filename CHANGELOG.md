@@ -475,3 +475,4 @@
 - [2026-01-08 00:50] chore(chips): fix error boundary handling
 - [2026-01-07 20:00] feat(viz): enable CI build configuration
 - [2026-01-09 01:42] fix(ui): adjust layer selector dropdown panel
+- [2026-01-09 01:07] style(nav): refactor route line shadow layer
