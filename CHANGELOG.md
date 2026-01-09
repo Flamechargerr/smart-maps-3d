@@ -480,3 +480,4 @@
 - [2026-01-10 01:20] perf(core): tune search bar glassmorphism styling
 - [2026-01-10 02:11] docs(api): improve map marker drop animation
 - [2026-01-09 21:33] test(perf): clean up satellite tile source
+- [2026-01-09 19:27] chore(map): add state management flow
