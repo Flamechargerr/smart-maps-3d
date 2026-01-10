@@ -482,3 +482,4 @@
 - [2026-01-09 21:33] test(perf): clean up satellite tile source
 - [2026-01-09 19:27] chore(map): add state management flow
 - [2026-01-09 20:29] feat(search): optimize OSRM routing API handler
+- [2026-01-10 20:13] fix(dir): extract atmospheric vignette overlay
