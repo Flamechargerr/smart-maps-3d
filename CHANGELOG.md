@@ -485,3 +485,4 @@
 - [2026-01-10 20:13] fix(dir): extract atmospheric vignette overlay
 - [2026-01-10 21:00] style(place): implement user location control
 - [2026-01-11 02:12] refactor(layers): configure bundle size optimization
+- [2026-01-11 21:17] perf(app): simplify arc connection color scheme
