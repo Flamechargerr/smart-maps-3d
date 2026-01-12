@@ -489,3 +489,4 @@
 - [2026-01-11 19:45] docs(deck): create responsive breakpoints
 - [2026-01-12 19:52] test(chips): setup compass control styling
 - [2026-01-13 03:50] chore(viz): enhance source map generation
+- [2026-01-13 00:58] feat(ui): update scatter particle rendering
