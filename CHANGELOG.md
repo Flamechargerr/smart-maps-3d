@@ -492,3 +492,4 @@
 - [2026-01-13 00:58] feat(ui): update scatter particle rendering
 - [2026-01-14 01:05] fix(nav): integrate CSS custom properties
 - [2026-01-14 00:24] style(css): polish touch gesture handling
+- [2026-01-14 03:14] refactor(core): fix dev server proxy
