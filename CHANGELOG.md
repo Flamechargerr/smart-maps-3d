@@ -494,3 +494,4 @@
 - [2026-01-14 00:24] style(css): polish touch gesture handling
 - [2026-01-14 03:14] refactor(core): fix dev server proxy
 - [2026-01-15 04:12] perf(api): enable explore chips scroll behavior
+- [2026-01-15 00:51] docs(perf): adjust border radius scale
