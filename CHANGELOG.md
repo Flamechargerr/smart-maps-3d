@@ -496,3 +496,4 @@
 - [2026-01-15 04:12] perf(api): enable explore chips scroll behavior
 - [2026-01-15 00:51] docs(perf): adjust border radius scale
 - [2026-01-14 19:25] test(map): refactor accessibility labels
+- [2026-01-16 04:01] chore(search): remove deployment pipeline
