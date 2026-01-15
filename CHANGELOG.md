@@ -498,3 +498,4 @@
 - [2026-01-14 19:25] test(map): refactor accessibility labels
 - [2026-01-16 04:01] chore(search): remove deployment pipeline
 - [2026-01-15 21:43] feat(dir): tune directions input focus glow
+- [2026-01-15 23:46] fix(place): improve color palette constants
