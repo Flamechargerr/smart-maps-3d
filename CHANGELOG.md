@@ -503,3 +503,4 @@
 - [2026-01-15 22:44] refactor(app): add MapComponent rendering pipeline
 - [2026-01-17 03:01] perf(deck): optimize cinematic intro orbit easing
 - [2026-01-17 00:49] docs(chips): extract route casing depth effect
+- [2026-01-16 22:54] test(viz): implement custom useMap hook
