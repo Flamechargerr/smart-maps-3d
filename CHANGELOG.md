@@ -501,3 +501,4 @@
 - [2026-01-15 23:46] fix(place): improve color palette constants
 - [2026-01-16 02:24] style(layers): clean up API rate limit handler
 - [2026-01-15 22:44] refactor(app): add MapComponent rendering pipeline
+- [2026-01-17 03:01] perf(deck): optimize cinematic intro orbit easing
