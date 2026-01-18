@@ -506,3 +506,4 @@
 - [2026-01-16 22:54] test(viz): implement custom useMap hook
 - [2026-01-17 20:59] chore(ui): configure Nominatim geocoding integration
 - [2026-01-17 22:34] feat(nav): simplify pulse ring keyframe timing
+- [2026-01-19 03:18] fix(css): create 3D building extrusion
