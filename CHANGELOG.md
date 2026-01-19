@@ -508,3 +508,4 @@
 - [2026-01-17 22:34] feat(nav): simplify pulse ring keyframe timing
 - [2026-01-19 03:18] fix(css): create 3D building extrusion
 - [2026-01-18 23:33] style(core): setup component lazy loading
+- [2026-01-20 00:22] refactor(api): enhance deck.gl HexagonLayer parameters
