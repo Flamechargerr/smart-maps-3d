@@ -514,3 +514,4 @@
 - [2026-01-21 02:30] test(search): polish tree shaking config
 - [2026-01-20 20:31] chore(dir): fix trip animation frame loop
 - [2026-01-21 03:10] feat(place): enable TypeScript strict mode types
+- [2026-01-20 22:21] fix(layers): adjust zoom controls position
