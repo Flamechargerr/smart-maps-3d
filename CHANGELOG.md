@@ -512,3 +512,4 @@
 - [2026-01-20 02:21] perf(perf): update loading globe spinner
 - [2026-01-19 22:38] docs(map): integrate scale bar formatting
 - [2026-01-21 02:30] test(search): polish tree shaking config
+- [2026-01-20 20:31] chore(dir): fix trip animation frame loop
