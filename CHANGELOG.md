@@ -517,3 +517,4 @@
 - [2026-01-20 22:21] fix(layers): adjust zoom controls position
 - [2026-01-22 03:53] style(app): refactor hot module replacement
 - [2026-01-21 22:23] refactor(deck): remove bottom navigation indicator
+- [2026-01-21 19:24] perf(chips): tune shadow elevation tokens
