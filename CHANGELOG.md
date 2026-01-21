@@ -515,3 +515,4 @@
 - [2026-01-20 20:31] chore(dir): fix trip animation frame loop
 - [2026-01-21 03:10] feat(place): enable TypeScript strict mode types
 - [2026-01-20 22:21] fix(layers): adjust zoom controls position
+- [2026-01-22 03:53] style(app): refactor hot module replacement
