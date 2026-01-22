@@ -519,3 +519,4 @@
 - [2026-01-21 22:23] refactor(deck): remove bottom navigation indicator
 - [2026-01-21 19:24] perf(chips): tune shadow elevation tokens
 - [2026-01-21 19:54] docs(viz): improve keyboard navigation
+- [2026-01-22 22:37] test(ui): clean up environment variables
