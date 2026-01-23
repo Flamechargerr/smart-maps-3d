@@ -522,3 +522,4 @@
 - [2026-01-22 22:37] test(ui): clean up environment variables
 - [2026-01-23 01:40] chore(nav): add place card spring animation
 - [2026-01-23 00:52] feat(css): optimize font weight hierarchy
+- [2026-01-24 03:36] fix(core): extract error boundary handling
