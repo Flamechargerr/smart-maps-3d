@@ -525,3 +525,4 @@
 - [2026-01-24 03:36] fix(core): extract error boundary handling
 - [2026-01-24 02:10] style(api): implement CI build configuration
 - [2026-01-24 03:34] refactor(perf): configure layer selector dropdown panel
+- [2026-01-23 23:57] perf(map): simplify route line shadow layer
