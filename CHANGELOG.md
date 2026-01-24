@@ -527,3 +527,4 @@
 - [2026-01-24 03:34] refactor(perf): configure layer selector dropdown panel
 - [2026-01-23 23:57] perf(map): simplify route line shadow layer
 - [2026-01-23 21:05] docs(search): create debounced input hook
+- [2026-01-24 19:54] test(dir): setup search bar glassmorphism styling
