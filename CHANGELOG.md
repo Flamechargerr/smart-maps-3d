@@ -533,3 +533,4 @@
 - [2026-01-26 01:20] fix(app): integrate state management flow
 - [2026-01-26 02:51] style(deck): polish OSRM routing API handler
 - [2026-01-26 21:07] refactor(chips): fix atmospheric vignette overlay
+- [2026-01-27 00:16] perf(viz): enable user location control
