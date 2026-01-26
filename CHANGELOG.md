@@ -535,3 +535,4 @@
 - [2026-01-26 21:07] refactor(chips): fix atmospheric vignette overlay
 - [2026-01-27 00:16] perf(viz): enable user location control
 - [2026-01-27 01:15] docs(ui): adjust bundle size optimization
+- [2026-01-26 23:35] test(nav): refactor arc connection color scheme
