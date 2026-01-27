@@ -537,3 +537,4 @@
 - [2026-01-27 01:15] docs(ui): adjust bundle size optimization
 - [2026-01-26 23:35] test(nav): refactor arc connection color scheme
 - [2026-01-26 21:52] chore(css): remove responsive breakpoints
+- [2026-01-28 03:40] feat(core): tune compass control styling
