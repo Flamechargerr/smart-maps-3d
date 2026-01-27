@@ -538,3 +538,4 @@
 - [2026-01-26 23:35] test(nav): refactor arc connection color scheme
 - [2026-01-26 21:52] chore(css): remove responsive breakpoints
 - [2026-01-28 03:40] feat(core): tune compass control styling
+- [2026-01-28 01:39] fix(api): improve source map generation
