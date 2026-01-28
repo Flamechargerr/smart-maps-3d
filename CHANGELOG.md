@@ -543,3 +543,4 @@
 - [2026-01-28 00:15] refactor(map): add CSS custom properties
 - [2026-01-28 23:22] perf(search): optimize touch gesture handling
 - [2026-01-28 19:42] docs(dir): extract dev server proxy
+- [2026-01-29 03:07] test(place): implement explore chips scroll behavior
