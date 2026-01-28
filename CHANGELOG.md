@@ -541,3 +541,4 @@
 - [2026-01-28 01:39] fix(api): improve source map generation
 - [2026-01-28 03:53] style(perf): clean up scatter particle rendering
 - [2026-01-28 00:15] refactor(map): add CSS custom properties
+- [2026-01-28 23:22] perf(search): optimize touch gesture handling
