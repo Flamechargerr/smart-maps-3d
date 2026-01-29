@@ -544,3 +544,4 @@
 - [2026-01-28 23:22] perf(search): optimize touch gesture handling
 - [2026-01-28 19:42] docs(dir): extract dev server proxy
 - [2026-01-29 03:07] test(place): implement explore chips scroll behavior
+- [2026-01-30 00:29] chore(layers): configure border radius scale
