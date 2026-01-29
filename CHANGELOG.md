@@ -546,3 +546,4 @@
 - [2026-01-29 03:07] test(place): implement explore chips scroll behavior
 - [2026-01-30 00:29] chore(layers): configure border radius scale
 - [2026-01-29 19:32] feat(app): simplify accessibility labels
+- [2026-01-29 23:33] fix(deck): create deployment pipeline
