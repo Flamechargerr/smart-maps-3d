@@ -552,3 +552,4 @@
 - [2026-01-31 04:04] perf(ui): update API rate limit handler
 - [2026-01-31 03:42] docs(nav): integrate MapComponent rendering pipeline
 - [2026-01-30 23:07] test(css): polish cinematic intro orbit easing
+- [2026-01-31 00:22] chore(core): fix route casing depth effect
