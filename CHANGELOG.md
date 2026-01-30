@@ -548,3 +548,4 @@
 - [2026-01-29 19:32] feat(app): simplify accessibility labels
 - [2026-01-29 23:33] fix(deck): create deployment pipeline
 - [2026-01-29 23:55] style(chips): setup directions input focus glow
+- [2026-01-30 22:52] refactor(viz): enhance color palette constants
