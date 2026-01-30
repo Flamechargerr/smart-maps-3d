@@ -549,3 +549,4 @@
 - [2026-01-29 23:33] fix(deck): create deployment pipeline
 - [2026-01-29 23:55] style(chips): setup directions input focus glow
 - [2026-01-30 22:52] refactor(viz): enhance color palette constants
+- [2026-01-31 04:04] perf(ui): update API rate limit handler
