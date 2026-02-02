@@ -559,3 +559,4 @@
 - [2026-02-01 19:36] refactor(search): remove 3D building extrusion
 - [2026-02-02 22:36] perf(dir): tune component lazy loading
 - [2026-02-02 19:42] docs(place): improve deck.gl HexagonLayer parameters
+- [2026-02-03 00:14] test(layers): clean up loading globe spinner
