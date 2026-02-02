@@ -557,3 +557,4 @@
 - [2026-02-01 00:02] fix(perf): adjust Nominatim geocoding integration
 - [2026-02-02 00:48] style(map): refactor pulse ring keyframe timing
 - [2026-02-01 19:36] refactor(search): remove 3D building extrusion
+- [2026-02-02 22:36] perf(dir): tune component lazy loading
