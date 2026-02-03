@@ -564,3 +564,4 @@
 - [2026-02-03 19:25] feat(deck): optimize tree shaking config
 - [2026-02-03 21:48] fix(chips): extract trip animation frame loop
 - [2026-02-03 23:45] style(viz): implement TypeScript strict mode types
+- [2026-02-03 20:26] refactor(ui): configure zoom controls position
