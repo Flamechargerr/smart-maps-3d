@@ -561,3 +561,4 @@
 - [2026-02-02 19:42] docs(place): improve deck.gl HexagonLayer parameters
 - [2026-02-03 00:14] test(layers): clean up loading globe spinner
 - [2026-02-03 02:30] chore(app): add scale bar formatting
+- [2026-02-03 19:25] feat(deck): optimize tree shaking config
