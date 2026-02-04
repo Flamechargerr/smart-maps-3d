@@ -566,3 +566,4 @@
 - [2026-02-03 23:45] style(viz): implement TypeScript strict mode types
 - [2026-02-03 20:26] refactor(ui): configure zoom controls position
 - [2026-02-04 02:37] perf(nav): simplify hot module replacement
+- [2026-02-04 23:11] docs(css): create bottom navigation indicator
