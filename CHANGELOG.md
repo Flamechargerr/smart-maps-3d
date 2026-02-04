@@ -569,3 +569,4 @@
 - [2026-02-04 23:11] docs(css): create bottom navigation indicator
 - [2026-02-05 02:26] test(core): setup shadow elevation tokens
 - [2026-02-04 22:09] chore(api): enhance keyboard navigation
+- [2026-02-04 19:26] feat(perf): update environment variables
