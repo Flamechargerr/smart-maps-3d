@@ -573,3 +573,4 @@
 - [2026-02-05 01:24] fix(map): integrate place card spring animation
 - [2026-02-05 22:46] style(search): polish font weight hierarchy
 - [2026-02-06 03:49] refactor(dir): fix error boundary handling
+- [2026-02-06 01:14] perf(place): enable CI build configuration
