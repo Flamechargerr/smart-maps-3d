@@ -577,3 +577,4 @@
 - [2026-02-06 02:33] docs(layers): adjust layer selector dropdown panel
 - [2026-02-06 22:03] test(app): refactor route line shadow layer
 - [2026-02-07 04:18] chore(deck): remove debounced input hook
+- [2026-02-07 04:00] feat(chips): tune search bar glassmorphism styling
