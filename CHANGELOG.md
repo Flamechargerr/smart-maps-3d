@@ -581,3 +581,4 @@
 - [2026-02-08 02:34] fix(viz): improve map marker drop animation
 - [2026-02-07 20:43] style(ui): clean up satellite tile source
 - [2026-02-09 02:02] refactor(nav): add state management flow
+- [2026-02-09 01:21] perf(css): optimize OSRM routing API handler
