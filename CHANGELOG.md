@@ -586,3 +586,4 @@
 - [2026-02-10 03:27] test(api): implement user location control
 - [2026-02-10 01:50] chore(perf): configure bundle size optimization
 - [2026-02-09 23:38] feat(map): simplify arc connection color scheme
+- [2026-02-11 03:33] fix(search): create responsive breakpoints
