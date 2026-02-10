@@ -587,3 +587,4 @@
 - [2026-02-10 01:50] chore(perf): configure bundle size optimization
 - [2026-02-09 23:38] feat(map): simplify arc connection color scheme
 - [2026-02-11 03:33] fix(search): create responsive breakpoints
+- [2026-02-10 21:46] style(dir): setup compass control styling
