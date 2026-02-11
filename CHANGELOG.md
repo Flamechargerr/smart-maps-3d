@@ -591,3 +591,4 @@
 - [2026-02-11 02:46] refactor(place): enhance source map generation
 - [2026-02-10 23:07] perf(layers): update scatter particle rendering
 - [2026-02-12 00:02] docs(app): integrate CSS custom properties
+- [2026-02-11 21:26] test(deck): polish touch gesture handling
