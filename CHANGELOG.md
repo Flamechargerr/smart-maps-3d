@@ -593,3 +593,4 @@
 - [2026-02-12 00:02] docs(app): integrate CSS custom properties
 - [2026-02-11 21:26] test(deck): polish touch gesture handling
 - [2026-02-11 21:20] chore(chips): fix dev server proxy
+- [2026-02-12 03:05] feat(viz): enable explore chips scroll behavior
