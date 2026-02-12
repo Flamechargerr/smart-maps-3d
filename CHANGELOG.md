@@ -596,3 +596,4 @@
 - [2026-02-12 03:05] feat(viz): enable explore chips scroll behavior
 - [2026-02-13 03:44] fix(ui): adjust border radius scale
 - [2026-02-13 03:36] style(nav): refactor accessibility labels
+- [2026-02-12 21:00] refactor(css): remove deployment pipeline
