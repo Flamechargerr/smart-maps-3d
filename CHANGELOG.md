@@ -594,3 +594,4 @@
 - [2026-02-11 21:26] test(deck): polish touch gesture handling
 - [2026-02-11 21:20] chore(chips): fix dev server proxy
 - [2026-02-12 03:05] feat(viz): enable explore chips scroll behavior
+- [2026-02-13 03:44] fix(ui): adjust border radius scale
