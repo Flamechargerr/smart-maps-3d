@@ -595,3 +595,4 @@
 - [2026-02-11 21:20] chore(chips): fix dev server proxy
 - [2026-02-12 03:05] feat(viz): enable explore chips scroll behavior
 - [2026-02-13 03:44] fix(ui): adjust border radius scale
+- [2026-02-13 03:36] style(nav): refactor accessibility labels
