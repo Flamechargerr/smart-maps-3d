@@ -598,3 +598,4 @@
 - [2026-02-13 03:36] style(nav): refactor accessibility labels
 - [2026-02-12 21:00] refactor(css): remove deployment pipeline
 - [2026-02-12 20:34] perf(core): tune directions input focus glow
+- [2026-02-13 23:07] docs(api): improve color palette constants
