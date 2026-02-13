@@ -599,3 +599,4 @@
 - [2026-02-12 21:00] refactor(css): remove deployment pipeline
 - [2026-02-12 20:34] perf(core): tune directions input focus glow
 - [2026-02-13 23:07] docs(api): improve color palette constants
+- [2026-02-14 03:38] test(perf): clean up API rate limit handler
