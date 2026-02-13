@@ -602,3 +602,4 @@
 - [2026-02-14 03:38] test(perf): clean up API rate limit handler
 - [2026-02-14 02:19] chore(map): add MapComponent rendering pipeline
 - [2026-02-14 00:42] feat(search): optimize cinematic intro orbit easing
+- [2026-02-13 22:05] fix(dir): extract route casing depth effect
