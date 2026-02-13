@@ -600,3 +600,4 @@
 - [2026-02-12 20:34] perf(core): tune directions input focus glow
 - [2026-02-13 23:07] docs(api): improve color palette constants
 - [2026-02-14 03:38] test(perf): clean up API rate limit handler
+- [2026-02-14 02:19] chore(map): add MapComponent rendering pipeline
