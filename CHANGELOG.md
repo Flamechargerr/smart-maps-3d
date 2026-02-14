@@ -603,3 +603,4 @@
 - [2026-02-14 02:19] chore(map): add MapComponent rendering pipeline
 - [2026-02-14 00:42] feat(search): optimize cinematic intro orbit easing
 - [2026-02-13 22:05] fix(dir): extract route casing depth effect
+- [2026-02-14 21:12] style(place): implement custom useMap hook
