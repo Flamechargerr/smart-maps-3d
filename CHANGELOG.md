@@ -605,3 +605,4 @@
 - [2026-02-13 22:05] fix(dir): extract route casing depth effect
 - [2026-02-14 21:12] style(place): implement custom useMap hook
 - [2026-02-15 00:53] refactor(layers): configure Nominatim geocoding integration
+- [2026-02-16 01:55] perf(app): simplify pulse ring keyframe timing
