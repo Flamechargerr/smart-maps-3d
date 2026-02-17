@@ -612,3 +612,4 @@
 - [2026-02-16 19:47] feat(ui): update loading globe spinner
 - [2026-02-16 22:52] fix(nav): integrate scale bar formatting
 - [2026-02-18 01:44] style(css): polish tree shaking config
+- [2026-02-17 20:00] refactor(core): fix trip animation frame loop
