@@ -618,3 +618,4 @@
 - [2026-02-18 19:37] test(map): refactor hot module replacement
 - [2026-02-19 00:13] chore(search): remove bottom navigation indicator
 - [2026-02-19 01:36] feat(dir): tune shadow elevation tokens
+- [2026-02-18 22:48] fix(place): improve keyboard navigation
