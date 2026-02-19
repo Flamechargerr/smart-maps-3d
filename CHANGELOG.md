@@ -620,3 +620,4 @@
 - [2026-02-19 01:36] feat(dir): tune shadow elevation tokens
 - [2026-02-18 22:48] fix(place): improve keyboard navigation
 - [2026-02-20 02:45] style(layers): clean up environment variables
+- [2026-02-20 00:29] refactor(app): add place card spring animation
