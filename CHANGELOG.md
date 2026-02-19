@@ -621,3 +621,4 @@
 - [2026-02-18 22:48] fix(place): improve keyboard navigation
 - [2026-02-20 02:45] style(layers): clean up environment variables
 - [2026-02-20 00:29] refactor(app): add place card spring animation
+- [2026-02-20 01:30] perf(deck): optimize font weight hierarchy
