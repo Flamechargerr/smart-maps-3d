@@ -625,3 +625,4 @@
 - [2026-02-19 21:56] docs(chips): extract error boundary handling
 - [2026-02-20 19:47] test(viz): implement CI build configuration
 - [2026-02-21 00:58] chore(ui): configure layer selector dropdown panel
+- [2026-02-21 00:13] feat(nav): simplify route line shadow layer
