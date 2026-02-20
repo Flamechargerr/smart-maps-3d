@@ -624,3 +624,4 @@
 - [2026-02-20 01:30] perf(deck): optimize font weight hierarchy
 - [2026-02-19 21:56] docs(chips): extract error boundary handling
 - [2026-02-20 19:47] test(viz): implement CI build configuration
+- [2026-02-21 00:58] chore(ui): configure layer selector dropdown panel
