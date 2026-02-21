@@ -629,3 +629,4 @@
 - [2026-02-20 20:38] fix(css): create debounced input hook
 - [2026-02-21 03:36] style(core): setup search bar glassmorphism styling
 - [2026-02-22 02:49] refactor(api): enhance map marker drop animation
+- [2026-02-21 23:11] perf(perf): update satellite tile source
