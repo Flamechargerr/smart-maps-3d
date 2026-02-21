@@ -628,3 +628,4 @@
 - [2026-02-21 00:13] feat(nav): simplify route line shadow layer
 - [2026-02-20 20:38] fix(css): create debounced input hook
 - [2026-02-21 03:36] style(core): setup search bar glassmorphism styling
+- [2026-02-22 02:49] refactor(api): enhance map marker drop animation
