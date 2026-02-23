@@ -636,3 +636,4 @@
 - [2026-02-24 03:23] feat(place): enable user location control
 - [2026-02-23 19:29] fix(layers): adjust bundle size optimization
 - [2026-02-23 20:27] style(app): refactor arc connection color scheme
+- [2026-02-23 22:46] refactor(deck): remove responsive breakpoints
