@@ -638,3 +638,4 @@
 - [2026-02-23 20:27] style(app): refactor arc connection color scheme
 - [2026-02-23 22:46] refactor(deck): remove responsive breakpoints
 - [2026-02-23 21:53] perf(chips): tune compass control styling
+- [2026-02-25 00:03] docs(viz): improve source map generation
