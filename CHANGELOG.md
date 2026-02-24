@@ -640,3 +640,4 @@
 - [2026-02-23 21:53] perf(chips): tune compass control styling
 - [2026-02-25 00:03] docs(viz): improve source map generation
 - [2026-02-25 01:57] test(ui): clean up scatter particle rendering
+- [2026-02-24 21:45] chore(nav): add CSS custom properties
