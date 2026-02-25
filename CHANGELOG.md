@@ -641,3 +641,4 @@
 - [2026-02-25 00:03] docs(viz): improve source map generation
 - [2026-02-25 01:57] test(ui): clean up scatter particle rendering
 - [2026-02-24 21:45] chore(nav): add CSS custom properties
+- [2026-02-26 01:59] feat(css): optimize touch gesture handling
