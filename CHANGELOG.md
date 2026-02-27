@@ -647,3 +647,4 @@
 - [2026-02-26 19:44] refactor(perf): configure border radius scale
 - [2026-02-26 20:51] perf(map): simplify accessibility labels
 - [2026-02-27 01:03] docs(search): create deployment pipeline
+- [2026-02-27 20:26] test(dir): setup directions input focus glow
