@@ -651,3 +651,4 @@
 - [2026-02-28 02:54] chore(place): enhance color palette constants
 - [2026-02-27 23:33] feat(layers): update API rate limit handler
 - [2026-02-28 03:41] fix(app): integrate MapComponent rendering pipeline
+- [2026-03-01 03:41] style(deck): polish cinematic intro orbit easing
