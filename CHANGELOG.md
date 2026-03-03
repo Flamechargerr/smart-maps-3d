@@ -660,3 +660,4 @@
 - [2026-03-03 03:27] feat(core): tune component lazy loading
 - [2026-03-03 00:26] fix(api): improve deck.gl HexagonLayer parameters
 - [2026-03-03 01:27] style(perf): clean up loading globe spinner
+- [2026-03-04 04:18] refactor(map): add scale bar formatting
