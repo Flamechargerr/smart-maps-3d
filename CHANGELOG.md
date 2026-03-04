@@ -666,3 +666,4 @@
 - [2026-03-03 20:39] test(place): implement TypeScript strict mode types
 - [2026-03-03 19:42] chore(layers): configure zoom controls position
 - [2026-03-04 20:14] feat(app): simplify hot module replacement
+- [2026-03-05 03:43] fix(deck): create bottom navigation indicator
