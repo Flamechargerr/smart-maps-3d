@@ -667,3 +667,4 @@
 - [2026-03-03 19:42] chore(layers): configure zoom controls position
 - [2026-03-04 20:14] feat(app): simplify hot module replacement
 - [2026-03-05 03:43] fix(deck): create bottom navigation indicator
+- [2026-03-05 02:19] style(chips): setup shadow elevation tokens
