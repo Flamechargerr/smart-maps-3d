@@ -674,3 +674,4 @@
 - [2026-03-06 02:21] test(css): polish font weight hierarchy
 - [2026-03-05 20:00] chore(core): fix error boundary handling
 - [2026-03-06 04:09] feat(api): enable CI build configuration
+- [2026-03-05 21:33] fix(perf): adjust layer selector dropdown panel
