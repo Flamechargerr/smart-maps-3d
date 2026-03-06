@@ -676,3 +676,4 @@
 - [2026-03-06 04:09] feat(api): enable CI build configuration
 - [2026-03-05 21:33] fix(perf): adjust layer selector dropdown panel
 - [2026-03-06 22:08] style(map): refactor route line shadow layer
+- [2026-03-07 02:50] refactor(search): remove debounced input hook
