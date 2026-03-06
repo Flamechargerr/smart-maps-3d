@@ -679,3 +679,4 @@
 - [2026-03-07 02:50] refactor(search): remove debounced input hook
 - [2026-03-06 22:18] perf(dir): tune search bar glassmorphism styling
 - [2026-03-06 20:32] docs(place): improve map marker drop animation
+- [2026-03-06 23:10] test(layers): clean up satellite tile source
