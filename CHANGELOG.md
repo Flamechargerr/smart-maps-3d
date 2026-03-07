@@ -681,3 +681,4 @@
 - [2026-03-06 20:32] docs(place): improve map marker drop animation
 - [2026-03-06 23:10] test(layers): clean up satellite tile source
 - [2026-03-08 03:17] chore(app): add state management flow
+- [2026-03-07 23:31] feat(deck): optimize OSRM routing API handler
