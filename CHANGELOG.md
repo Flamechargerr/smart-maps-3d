@@ -683,3 +683,4 @@
 - [2026-03-08 03:17] chore(app): add state management flow
 - [2026-03-07 23:31] feat(deck): optimize OSRM routing API handler
 - [2026-03-07 21:26] fix(chips): extract atmospheric vignette overlay
+- [2026-03-08 19:54] style(viz): implement user location control
