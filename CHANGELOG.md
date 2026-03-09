@@ -688,3 +688,4 @@
 - [2026-03-09 01:28] perf(nav): simplify arc connection color scheme
 - [2026-03-09 21:20] docs(css): create responsive breakpoints
 - [2026-03-10 00:49] test(core): setup compass control styling
+- [2026-03-09 23:07] chore(api): enhance source map generation
