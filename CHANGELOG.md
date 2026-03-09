@@ -689,3 +689,4 @@
 - [2026-03-09 21:20] docs(css): create responsive breakpoints
 - [2026-03-10 00:49] test(core): setup compass control styling
 - [2026-03-09 23:07] chore(api): enhance source map generation
+- [2026-03-10 02:50] feat(perf): update scatter particle rendering
