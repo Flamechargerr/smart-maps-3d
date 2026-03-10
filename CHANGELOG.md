@@ -691,3 +691,4 @@
 - [2026-03-09 23:07] chore(api): enhance source map generation
 - [2026-03-10 02:50] feat(perf): update scatter particle rendering
 - [2026-03-09 19:55] fix(map): integrate CSS custom properties
+- [2026-03-11 03:41] style(search): polish touch gesture handling
