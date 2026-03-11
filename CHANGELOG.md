@@ -695,3 +695,4 @@
 - [2026-03-11 03:53] refactor(dir): fix dev server proxy
 - [2026-03-11 02:17] perf(place): enable explore chips scroll behavior
 - [2026-03-11 20:00] docs(layers): adjust border radius scale
+- [2026-03-11 22:56] test(app): refactor accessibility labels
