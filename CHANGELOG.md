@@ -699,3 +699,4 @@
 - [2026-03-12 01:28] chore(deck): remove deployment pipeline
 - [2026-03-12 02:43] feat(chips): tune directions input focus glow
 - [2026-03-11 19:33] fix(viz): improve color palette constants
+- [2026-03-12 20:20] style(ui): clean up API rate limit handler
