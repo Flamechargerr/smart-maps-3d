@@ -701,3 +701,4 @@
 - [2026-03-11 19:33] fix(viz): improve color palette constants
 - [2026-03-12 20:20] style(ui): clean up API rate limit handler
 - [2026-03-12 22:30] refactor(nav): add MapComponent rendering pipeline
+- [2026-03-12 21:11] perf(css): optimize cinematic intro orbit easing
