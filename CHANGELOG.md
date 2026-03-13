@@ -702,3 +702,4 @@
 - [2026-03-12 20:20] style(ui): clean up API rate limit handler
 - [2026-03-12 22:30] refactor(nav): add MapComponent rendering pipeline
 - [2026-03-12 21:11] perf(css): optimize cinematic intro orbit easing
+- [2026-03-14 04:09] docs(core): extract route casing depth effect
