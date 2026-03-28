@@ -5,7 +5,7 @@ import {
   Hotel, ShoppingBag, Landmark, Heart, Clock, Box, Hexagon, Zap, Sparkles
 } from 'lucide-react';
 import './index.css';
-import MapComponent, { type MapHandle } from './MapComponent';
+import MapComponent, { type MapHandle, type MapStyle } from './MapComponent';
 import SearchPanel from './SearchPanel';
 import DirectionsPanel from './DirectionsPanel';
 import LayerSelector from './LayerSelector';
@@ -102,7 +102,7 @@ export default function App() {
 
     try {
       const res = await fetch(
-        `https://nominatim.openstreetmap.org/search?q=${chipId}+near+Mumbai&format=json&limit=8&viewbox=${center.lng-0.05},${center.lat+0.05},${center.lng+0.05},${center.lat-0.05}&bounded=1`,
+        `https://nominatim.openstreetmap.org/search?q=${encodeURIComponent(chipId)}&format=json&limit=8&viewbox=${center.lng-0.05},${center.lat+0.05},${center.lng+0.05},${center.lat-0.05}&bounded=1`,
         { headers: { 'Accept-Language': 'en' } }
       );
       const data = await res.json();
@@ -120,15 +120,24 @@ export default function App() {
 
   useEffect(() => {
     const handler = (e: Event) => {
-      const coords = (e as CustomEvent).detail;
+      const detail = (e as CustomEvent).detail;
+      const coords: number[][] = detail.coords;
+      const origin: [number, number] | undefined = detail.origin;
+      const dest: [number, number] | undefined = detail.dest;
+
       mapRef.current?.clearMarkers();
-      mapRef.current?.drawRoute(coords);
+      mapRef.current?.drawRoute(coords as [number, number][]);
+
+      // Add origin (blue) and destination (red) markers
+      if (origin) mapRef.current?.addMarker(origin[0], origin[1], '#4285F4', true);
+      if (dest) mapRef.current?.addMarker(dest[0], dest[1], '#ea4335', true);
+
       if (coords.length > 0) {
         const lngs = coords.map((c: number[]) => c[0]);
         const lats = coords.map((c: number[]) => c[1]);
         mapRef.current?.getMap()?.fitBounds(
           [[Math.min(...lngs), Math.min(...lats)], [Math.max(...lngs), Math.max(...lats)]],
-          { padding: 80, pitch: 45 }
+          { padding: { top: 80, bottom: 120, left: 80, right: 80 }, pitch: 52, bearing: -20, duration: 1200 }
         );
       }
     };
@@ -136,7 +145,7 @@ export default function App() {
     return () => window.removeEventListener('drawRoute', handler);
   }, []);
 
-  const handleStyleChange = useCallback((style: 'default' | 'satellite') => {
+  const handleStyleChange = useCallback((style: MapStyle) => {
     mapRef.current?.setStyle(style);
   }, []);
 
