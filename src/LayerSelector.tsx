@@ -1,18 +1,20 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Layers, Map, Satellite } from 'lucide-react';
+import { Layers, Map, Satellite, Globe } from 'lucide-react';
+import type { MapStyle } from './MapComponent';
 
 interface Props {
-  onStyleChange: (style: 'default' | 'satellite') => void;
+  onStyleChange: (style: MapStyle) => void;
 }
 
 export default function LayerSelector({ onStyleChange }: Props) {
   const [open, setOpen] = useState(false);
-  const [activeStyle, setActiveStyle] = useState<'default' | 'satellite'>('default');
+  const [activeStyle, setActiveStyle] = useState<MapStyle>('default');
 
-  const styles = [
-    { id: 'default' as const, label: 'Default', icon: Map, desc: '3D Buildings' },
-    { id: 'satellite' as const, label: 'Satellite', icon: Satellite, desc: 'Aerial view' },
+  const styles: { id: MapStyle; label: string; icon: typeof Map; desc: string }[] = [
+    { id: 'default', label: 'Default', icon: Map, desc: '3D Buildings' },
+    { id: 'satellite', label: 'Satellite', icon: Satellite, desc: 'Aerial view' },
+    { id: 'hybrid', label: 'Hybrid', icon: Globe, desc: 'Satellite + labels' },
   ];
 
   return (

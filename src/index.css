@@ -1,42 +1,42 @@
 @import url('https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;500;600;700&family=Roboto:wght@300;400;500&display=swap');
 
 /* ═══════════════════════════════════════════════
-   DESIGN TOKENS – Google Material You inspired
+   DESIGN TOKENS – Apple Maps × Google Maps hybrid
    ═══════════════════════════════════════════════ */
 :root {
-  --glass-bg: rgba(255, 255, 255, 0.88);
-  --glass-bg-solid: rgba(255, 255, 255, 0.96);
-  --glass-border: rgba(255, 255, 255, 0.5);
-  --glass-blur: blur(28px) saturate(200%);
+  --glass-bg: rgba(255, 255, 255, 0.86);
+  --glass-bg-solid: rgba(255, 255, 255, 0.97);
+  --glass-border: rgba(255, 255, 255, 0.6);
+  --glass-blur: blur(32px) saturate(180%);
 
-  --text-primary: #1f1f1f;
-  --text-secondary: #5f6368;
-  --text-tertiary: #9aa0a6;
+  --text-primary: #1c1c1e;
+  --text-secondary: #3c3c43;
+  --text-tertiary: #8e8e93;
 
-  --blue: #1a73e8;
-  --blue-hover: #1557b0;
-  --blue-surface: #d2e3fc;
-  --blue-light: #e8f0fe;
-  --red: #ea4335;
-  --green: #34a853;
-  --green-light: #e6f4ea;
-  --yellow: #fbbc04;
+  --blue: #007aff;
+  --blue-hover: #0062cc;
+  --blue-surface: #cce4ff;
+  --blue-light: #e5f1ff;
+  --red: #ff3b30;
+  --green: #34c759;
+  --green-light: #e5f7ea;
+  --yellow: #ff9f0a;
 
-  --shadow-1: 0 1px 2px rgba(60,64,67,0.3), 0 1px 3px 1px rgba(60,64,67,0.15);
-  --shadow-2: 0 1px 3px rgba(60,64,67,0.3), 0 4px 8px 3px rgba(60,64,67,0.15);
-  --shadow-3: 0 1px 3px rgba(60,64,67,0.3), 0 8px 24px 6px rgba(60,64,67,0.15);
-  --shadow-4: 0 4px 8px 2px rgba(60,64,67,0.25), 0 12px 32px 8px rgba(60,64,67,0.2);
+  --shadow-1: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.08);
+  --shadow-2: 0 4px 12px rgba(0,0,0,0.12), 0 2px 4px rgba(0,0,0,0.08);
+  --shadow-3: 0 8px 24px rgba(0,0,0,0.14), 0 4px 8px rgba(0,0,0,0.08);
+  --shadow-4: 0 16px 40px rgba(0,0,0,0.16), 0 6px 12px rgba(0,0,0,0.1);
 
-  --radius-xs: 6px;
-  --radius-sm: 8px;
-  --radius-md: 14px;
-  --radius-lg: 24px;
+  --radius-xs: 8px;
+  --radius-sm: 12px;
+  --radius-md: 16px;
+  --radius-lg: 22px;
   --radius-pill: 100px;
 
-  --ease: cubic-bezier(0.2, 0, 0, 1);
+  --ease: cubic-bezier(0.25, 0.46, 0.45, 0.94);
   --ease-bounce: cubic-bezier(0.34, 1.56, 0.64, 1);
 
-  --bottom-nav-height: 64px;
+  --bottom-nav-height: 68px;
 }
 
 /* ═══════════════════════════════════════════════
@@ -52,11 +52,11 @@ html, body, #root {
 }
 
 body {
-  font-family: 'Google Sans', 'Roboto', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-family: -apple-system, 'SF Pro Display', 'SF Pro Text', 'Google Sans', 'Helvetica Neue', sans-serif;
   color: var(--text-primary);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  letter-spacing: 0.01em;
+  letter-spacing: -0.01em;
 }
 
 button {
@@ -68,13 +68,14 @@ input { font-family: inherit; }
 ::selection { background: var(--blue-light); color: var(--blue); }
 
 /* ═══════════════════════════════════════════════
-   GLASS
+   GLASS – Apple Maps frosted glass
    ═══════════════════════════════════════════════ */
 .glass-panel {
   background: var(--glass-bg);
   backdrop-filter: var(--glass-blur);
   -webkit-backdrop-filter: var(--glass-blur);
   box-shadow: var(--shadow-2);
+  border: 0.5px solid rgba(255,255,255,0.7);
 }
 
 /* ═══════════════════════════════════════════════
@@ -183,8 +184,8 @@ input { font-family: inherit; }
 }
 
 .intro-title {
-  font-size: 36px; font-weight: 700; letter-spacing: -0.5px;
-  background: linear-gradient(135deg, #fff 0%, rgba(255,255,255,0.7) 100%);
+  font-size: 38px; font-weight: 700; letter-spacing: -0.5px;
+  background: linear-gradient(135deg, #fff 0%, rgba(255,255,255,0.75) 100%);
   -webkit-background-clip: text; -webkit-text-fill-color: transparent;
   background-clip: text;
 }
@@ -214,8 +215,8 @@ input { font-family: inherit; }
 
 .search-bar {
   display: flex; align-items: center; gap: 8px;
-  padding: 4px 12px 4px 6px; border-radius: var(--radius-pill); height: 48px;
-  transition: box-shadow 0.3s var(--ease), background 0.3s;
+  padding: 4px 14px 4px 6px; border-radius: var(--radius-pill); height: 50px;
+  transition: box-shadow 0.3s var(--ease), background 0.3s, border-radius 0.3s;
 }
 .search-bar.focused {
   box-shadow: var(--shadow-3);
@@ -299,14 +300,14 @@ input { font-family: inherit; }
    DIRECTIONS FAB
    ═══════════════════════════════════════════════ */
 .directions-fab {
-  flex-shrink: 0; width: 48px; height: 48px;
+  flex-shrink: 0; width: 50px; height: 50px;
   border-radius: 50%;
   background: var(--blue); color: white;
   display: flex; align-items: center; justify-content: center;
   box-shadow: var(--shadow-2);
-  transition: background 0.2s;
+  transition: background 0.2s, transform 0.15s;
 }
-.directions-fab:hover { background: var(--blue-hover); }
+.directions-fab:hover { background: var(--blue-hover); transform: scale(1.06); }
 
 /* ═══════════════════════════════════════════════
    EXPLORE CHIPS
@@ -322,18 +323,20 @@ input { font-family: inherit; }
 .explore-chip {
   display: flex; align-items: center; gap: 6px;
   padding: 8px 16px; border-radius: var(--radius-pill);
-  font-size: 13px; font-weight: 500; white-space: nowrap;
+  font-size: 13px; font-weight: 600; white-space: nowrap;
   background: var(--glass-bg-solid);
   box-shadow: var(--shadow-1);
   color: var(--text-primary);
   transition: all 0.2s var(--ease);
-  border: 1.5px solid transparent;
+  border: 0.5px solid rgba(0,0,0,0.06);
+  letter-spacing: -0.2px;
 }
 .explore-chip:hover {
   box-shadow: var(--shadow-2);
+  transform: translateY(-1px);
 }
 .explore-chip.active {
-  background: color-mix(in srgb, var(--chip-color) 12%, white);
+  background: color-mix(in srgb, var(--chip-color) 14%, white);
   color: var(--chip-color);
   border-color: color-mix(in srgb, var(--chip-color) 30%, transparent);
   box-shadow: var(--shadow-2);
@@ -450,7 +453,7 @@ input { font-family: inherit; }
 .layer-toggle-btn:hover { color: var(--text-primary); box-shadow: var(--shadow-3); }
 
 .layer-panel {
-  position: absolute; top: 52px; right: 0; width: 220px;
+  position: absolute; top: 52px; right: 0; width: 260px;
   border-radius: var(--radius-md); padding: 14px; z-index: 50;
   background: var(--glass-bg-solid);
 }
@@ -473,8 +476,9 @@ input { font-family: inherit; }
   display: flex; align-items: center; justify-content: center;
   color: var(--text-secondary); overflow: hidden;
 }
-.layer-preview.default { background: linear-gradient(135deg, #e8f5e9, #e3f2fd); }
+.layer-preview.default { background: linear-gradient(135deg, #e0f0d8, #daeaf8); }
 .layer-preview.satellite { background: linear-gradient(135deg, #1a2332, #263238); color: #8ab4f8; }
+.layer-preview.hybrid { background: linear-gradient(135deg, #2c3e2d, #1e2c3e); color: #a8d5b5; }
 
 .layer-label { font-size: 12px; font-weight: 500; }
 .layer-desc { font-size: 10px; color: var(--text-tertiary); }
@@ -493,13 +497,14 @@ input { font-family: inherit; }
 .weather-temp { color: var(--text-primary); font-weight: 600; }
 
 /* ═══════════════════════════════════════════════
-   PLACE CARD (BOTTOM SHEET)
+   PLACE CARD – Apple Maps bottom sheet style
    ═══════════════════════════════════════════════ */
 .place-card {
   position: absolute; bottom: 8px; left: 12px; right: 12px;
-  max-width: 420px; border-radius: var(--radius-lg); padding: 0 20px 20px;
+  max-width: 440px; border-radius: var(--radius-lg); padding: 0 20px 20px;
   pointer-events: auto; z-index: 20;
   background: var(--glass-bg-solid);
+  border-top: 0.5px solid rgba(0,0,0,0.08);
 }
 
 .place-drag-handle {
@@ -514,6 +519,7 @@ input { font-family: inherit; }
 .place-header-text { flex: 1; min-width: 0; }
 .place-name {
   font-size: 22px; font-weight: 700; line-height: 1.2;
+  letter-spacing: -0.5px;
   margin-bottom: 6px;
 }
 
@@ -576,7 +582,7 @@ input { font-family: inherit; }
 }
 
 /* ═══════════════════════════════════════════════
-   BOTTOM NAVIGATION
+   BOTTOM NAVIGATION – Apple Maps tab bar style
    ═══════════════════════════════════════════════ */
 .bottom-nav {
   position: absolute; bottom: 0; left: 0; right: 0;
@@ -584,18 +590,19 @@ input { font-family: inherit; }
   display: flex; align-items: stretch; justify-content: center;
   gap: 0; z-index: 25; pointer-events: auto;
   background: var(--glass-bg-solid);
-  border-top: 1px solid rgba(0,0,0,0.06);
+  border-top: 0.5px solid rgba(0,0,0,0.1);
   border-radius: 0;
-  box-shadow: 0 -1px 3px rgba(60,64,67,0.15);
+  box-shadow: 0 -4px 16px rgba(0,0,0,0.08);
 }
 
 .nav-item {
   flex: 1; display: flex; flex-direction: column; align-items: center;
-  justify-content: center; gap: 3px;
+  justify-content: center; gap: 4px;
   font-size: 11px; font-weight: 500; color: var(--text-tertiary);
   transition: color 0.2s var(--ease);
-  max-width: 120px;
+  max-width: 100px;
   position: relative;
+  letter-spacing: -0.2px;
 }
 .nav-item::after {
   content: ''; position: absolute; top: 0; left: 50%; transform: translateX(-50%);
@@ -605,7 +612,7 @@ input { font-family: inherit; }
 }
 .nav-item:hover { color: var(--text-secondary); }
 .nav-item.active { color: var(--blue); }
-.nav-item.active::after { width: 32px; }
+.nav-item.active::after { width: 28px; }
 .nav-item svg { transition: transform 0.2s var(--ease); }
 .nav-item:hover svg { transform: scale(1.1); }
 
@@ -694,6 +701,8 @@ input { font-family: inherit; }
 
 @media (min-width: 768px) {
   .bottom-nav { max-width: 480px; left: 50%; transform: translateX(-50%); border-radius: var(--radius-lg) var(--radius-lg) 0 0; }
+  .place-card { max-width: 440px; }
+  .directions-panel { max-width: 440px; }
 }
 
 /* ═══════════════════════════════════════════════

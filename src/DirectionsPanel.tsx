@@ -60,8 +60,14 @@ export default function DirectionsPanel({ onClose, onRoute }: Props) {
           [parseFloat(destResult.lon), parseFloat(destResult.lat)],
           profile
         );
-        // Use a custom event to pass route coords to map
-        window.dispatchEvent(new CustomEvent('drawRoute', { detail: coords }));
+        // Use a custom event to pass route coords and endpoints to map
+        window.dispatchEvent(new CustomEvent('drawRoute', {
+          detail: {
+            coords,
+            origin: [parseFloat(originResult.lon), parseFloat(originResult.lat)],
+            dest: [parseFloat(destResult.lon), parseFloat(destResult.lat)]
+          }
+        }));
       }
     } catch (e) {
       console.error('Routing error:', e);

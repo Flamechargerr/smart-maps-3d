@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState, forwardRef, useImperativeHandle } from 'react';
 import maplibregl from 'maplibre-gl';
+import type { FillExtrusionLayerSpecification } from '@maplibre/maplibre-gl-style-spec';
 import 'maplibre-gl/dist/maplibre-gl.css';
 
 const STYLES: Record<string, string | object> = {
@@ -15,8 +16,103 @@ const STYLES: Record<string, string | object> = {
       }
     },
     layers: [{ id: 'esri-sat-layer', type: 'raster', source: 'esri-sat' }]
+  },
+  hybrid: {
+    version: 8,
+    glyphs: 'https://fonts.openmaptiles.org/{fontstack}/{range}.pbf',
+    sources: {
+      'esri-sat': {
+        type: 'raster',
+        tiles: ['https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}'],
+        tileSize: 256,
+        attribution: '&copy; Esri'
+      },
+      'roads': {
+        type: 'raster',
+        tiles: ['https://server.arcgisonline.com/ArcGIS/rest/services/Reference/World_Transportation/MapServer/tile/{z}/{y}/{x}'],
+        tileSize: 256,
+        attribution: '&copy; Esri'
+      },
+      'labels': {
+        type: 'raster',
+        tiles: ['https://server.arcgisonline.com/ArcGIS/rest/services/Reference/World_Boundaries_and_Places/MapServer/tile/{z}/{y}/{x}'],
+        tileSize: 256,
+        attribution: '&copy; Esri'
+      }
+    },
+    layers: [
+      { id: 'esri-sat-layer', type: 'raster', source: 'esri-sat' },
+      { id: 'roads-layer', type: 'raster', source: 'roads', paint: { 'raster-opacity': 0.85 } },
+      { id: 'labels-layer', type: 'raster', source: 'labels', paint: { 'raster-opacity': 0.9 } }
+    ]
   }
 };
+
+/**
+ * Dynamically add a fill-extrusion (3D) buildings layer.
+ * Finds the correct source name by inspecting existing style layers.
+ */
+function addBuildingsLayer(map: maplibregl.Map) {
+  try {
+    if (map.getLayer('3d-buildings')) return;
+    const style = map.getStyle();
+    const layers = style.layers ?? [];
+
+    // Find the source name used by an existing building layer
+    const existingBuildingLayer = layers.find(
+      (l: any) => l['source-layer'] === 'building' && (l.type === 'fill' || l.type === 'fill-extrusion' || l.type === 'line')
+    ) as any;
+
+    const sourceName: string = existingBuildingLayer?.source ?? 'openmaptiles';
+
+    // Find the first symbol/label layer so we can insert buildings below labels
+    const labelLayerId = layers.find(
+      (l: any) => l.type === 'symbol' && l.layout?.['text-field']
+    )?.id;
+
+    map.addLayer(
+      {
+        id: '3d-buildings',
+        source: sourceName,
+        'source-layer': 'building',
+        type: 'fill-extrusion',
+        minzoom: 14,
+        paint: {
+          // Height-based color gradient (lighter at base, slightly darker for tall buildings)
+          'fill-extrusion-color': [
+            'interpolate', ['linear'],
+            ['coalesce', ['get', 'render_height'], ['get', 'height'], 0],
+            0, '#dde4ee',
+            30, '#cdd6e5',
+            100, '#b8c6d8',
+            300, '#a0b3c8'
+          ],
+          // Animate height in as zoom increases
+          'fill-extrusion-height': [
+            'interpolate', ['linear'], ['zoom'],
+            14, 0,
+            14.5, ['coalesce', ['get', 'render_height'], ['get', 'height'], 5]
+          ],
+          'fill-extrusion-base': [
+            'interpolate', ['linear'], ['zoom'],
+            14, 0,
+            14.5, ['coalesce', ['get', 'render_min_height'], ['get', 'min_height'], 0]
+          ],
+          'fill-extrusion-opacity': [
+            'interpolate', ['linear'], ['zoom'],
+            14, 0,
+            14.5, 0.88
+          ],
+        }
+      } as FillExtrusionLayerSpecification,
+      labelLayerId
+    );
+  } catch (e) {
+    console.warn('3D buildings layer skipped:', e);
+  }
+}
+
+export type MapStyle = 'default' | 'satellite' | 'hybrid';
 
 export interface MapHandle {
   flyTo: (opts: maplibregl.FlyToOptions) => void;
@@ -25,7 +121,7 @@ export interface MapHandle {
   drawRoute: (coords: [number, number][]) => void;
   clearRoute: () => void;
   getMap: () => maplibregl.Map | null;
-  setStyle: (style: 'default' | 'satellite') => void;
+  setStyle: (style: MapStyle) => void;
   startOrbit: () => void;
   stopOrbit: () => void;
 }
@@ -42,6 +138,7 @@ const MapComponent = forwardRef<MapHandle, Props>(({ onMapClick, onMapLoad }, re
   const [loaded, setLoaded] = useState(false);
   const orbitRef = useRef<number | null>(null);
   const routeAnimRef = useRef<number | null>(null);
+  const currentStyleRef = useRef<MapStyle>('default');
 
   useImperativeHandle(ref, () => ({
     flyTo(opts) {
@@ -143,6 +240,7 @@ const MapComponent = forwardRef<MapHandle, Props>(({ onMapClick, onMapLoad }, re
     },
     getMap() { return mapRef.current; },
     setStyle(style) {
+      currentStyleRef.current = style;
       mapRef.current?.setStyle(STYLES[style] as any);
     },
     startOrbit() {
@@ -174,9 +272,8 @@ const MapComponent = forwardRef<MapHandle, Props>(({ onMapClick, onMapLoad }, re
       zoom: 2.5,        // Start zoomed out (dramatic)
       pitch: 0,
       bearing: 0,
-      antialias: true,
       fadeDuration: 300
-    });
+    } as any);
 
     // Navigation
     map.addControl(new maplibregl.NavigationControl({
@@ -225,6 +322,13 @@ const MapComponent = forwardRef<MapHandle, Props>(({ onMapClick, onMapLoad }, re
         };
         orbitRef.current = requestAnimationFrame(spin);
       }, 6500);
+    });
+
+    // Re-add 3D buildings whenever the style is reloaded (initial load or setStyle)
+    map.on('style.load', () => {
+      if (currentStyleRef.current === 'default') {
+        addBuildingsLayer(map);
+      }
     });
 
     map.on('click', (e: maplibregl.MapMouseEvent) => {
