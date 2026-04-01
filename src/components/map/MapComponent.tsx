@@ -48,6 +48,8 @@ const STYLES: Record<string, string | object> = {
   }
 };
 
+const MAP_LOAD_TIMEOUT_MS = 7000;
+
 /**
  * Dynamically add a fill-extrusion (3D) buildings layer.
  * Finds the correct source name by inspecting existing style layers.
@@ -136,6 +138,7 @@ const MapComponent = forwardRef<MapHandle, Props>(({ onMapClick, onMapLoad }, re
   const mapRef = useRef<maplibregl.Map | null>(null);
   const markersRef = useRef<maplibregl.Marker[]>([]);
   const [loaded, setLoaded] = useState(false);
+  const initialLoadSettledRef = useRef(false);
   const orbitRef = useRef<number | null>(null);
   const routeAnimRef = useRef<number | null>(null);
   const currentStyleRef = useRef<MapStyle>('default');
@@ -265,6 +268,13 @@ const MapComponent = forwardRef<MapHandle, Props>(({ onMapClick, onMapLoad }, re
   useEffect(() => {
     if (!containerRef.current) return;
 
+    const settleInitialLoad = () => {
+      if (initialLoadSettledRef.current) return;
+      initialLoadSettledRef.current = true;
+      setLoaded(true);
+      onMapLoad?.();
+    };
+
     const map = new maplibregl.Map({
       container: containerRef.current,
       style: STYLES.default as string,
@@ -291,8 +301,7 @@ const MapComponent = forwardRef<MapHandle, Props>(({ onMapClick, onMapLoad }, re
     map.addControl(new maplibregl.ScaleControl({ maxWidth: 120 }), 'bottom-left');
 
     map.on('load', () => {
-      setLoaded(true);
-      onMapLoad?.();
+      settleInitialLoad();
 
       // ═══ CINEMATIC INTRO: Orbit from space to Mumbai ═══
       setTimeout(() => {
@@ -324,6 +333,12 @@ const MapComponent = forwardRef<MapHandle, Props>(({ onMapClick, onMapLoad }, re
       }, 6500);
     });
 
+    map.on('error', (e) => {
+      if (initialLoadSettledRef.current) return;
+      console.warn('Map failed to load style, showing map UI fallback:', e.error);
+      settleInitialLoad();
+    });
+
     // Re-add 3D buildings whenever the style is reloaded (initial load or setStyle)
     map.on('style.load', () => {
       if (currentStyleRef.current === 'default') {
@@ -350,8 +365,15 @@ const MapComponent = forwardRef<MapHandle, Props>(({ onMapClick, onMapLoad }, re
     map.on('mousedown', stopOrbitOnInteract);
     map.on('touchstart', stopOrbitOnInteract);
 
+    const loadTimeout = window.setTimeout(() => {
+      if (initialLoadSettledRef.current) return;
+      console.warn('Map load timed out, showing map UI fallback.');
+      settleInitialLoad();
+    }, MAP_LOAD_TIMEOUT_MS);
+
     mapRef.current = map;
     return () => {
+      window.clearTimeout(loadTimeout);
       if (orbitRef.current) cancelAnimationFrame(orbitRef.current);
       if (routeAnimRef.current) cancelAnimationFrame(routeAnimRef.current);
       map.remove();
