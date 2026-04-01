@@ -4,13 +4,13 @@ import {
   Navigation as NavIcon, Compass, Coffee, Fuel, Building2,
   Hotel, ShoppingBag, Landmark, Heart, Clock, Box, Hexagon, Zap, Sparkles
 } from 'lucide-react';
-import './index.css';
-import MapComponent, { type MapHandle, type MapStyle } from './MapComponent';
-import SearchPanel from './SearchPanel';
-import DirectionsPanel from './DirectionsPanel';
-import LayerSelector from './LayerSelector';
-import PlaceCard from './PlaceCard';
-import DeckOverlay, { type DeckLayerMode } from './DeckOverlay';
+import './styles/index.css';
+import MapComponent, { type MapHandle, type MapStyle } from './components/map/MapComponent';
+import SearchPanel from './components/panels/SearchPanel';
+import DirectionsPanel from './components/panels/DirectionsPanel';
+import LayerSelector from './components/map/LayerSelector';
+import PlaceCard from './components/panels/PlaceCard';
+import DeckOverlay, { type DeckLayerMode } from './components/map/DeckOverlay';
 
 interface PlaceInfo {
   name: string;

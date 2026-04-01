@@ -74,15 +74,20 @@ Open [http://localhost:5173](http://localhost:5173)
 
 ```
 src/
-├── App.tsx              # Main app shell, routing, state management
-├── MapComponent.tsx     # MapLibre GL JS with cinematic intro & orbit
-├── DeckOverlay.tsx      # deck.gl GPU 3D visualization layers
-├── SearchPanel.tsx      # Nominatim geocoding with autocomplete
-├── DirectionsPanel.tsx  # OSRM routing with turn-by-turn
-├── PlaceCard.tsx        # Place details bottom sheet
-├── LayerSelector.tsx    # Map style switcher
-├── index.css            # 700+ lines of premium CSS
-└── main.tsx             # Entry point
+├── App.tsx                       # Main app shell, routing, state management
+├── main.tsx                      # Entry point
+├── components/
+│   ├── map/
+│   │   ├── MapComponent.tsx      # MapLibre GL JS with cinematic intro & orbit
+│   │   ├── DeckOverlay.tsx       # deck.gl GPU 3D visualization layers
+│   │   └── LayerSelector.tsx     # Map style switcher
+│   └── panels/
+│       ├── SearchPanel.tsx       # Nominatim geocoding with autocomplete
+│       ├── DirectionsPanel.tsx   # OSRM routing with turn-by-turn
+│       └── PlaceCard.tsx         # Place details bottom sheet
+└── styles/
+    ├── index.css                 # 700+ lines of premium CSS
+    └── App.css
 ```
 
 ## License
