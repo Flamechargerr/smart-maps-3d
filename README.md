@@ -100,10 +100,6 @@ src/
 
 ![Smart Maps 3D architecture](./docs/images/smart-maps-architecture.svg)
 
-### UI Preview Asset
-
-![Smart Maps 3D UI hero](./src/assets/hero.png)
-
 ## License
 
 MIT
