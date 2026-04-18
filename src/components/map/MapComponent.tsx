@@ -48,6 +48,14 @@ const STYLES: Record<MapStyle, string | StyleSpecification> = {
   }
 };
 
+type LayerWithSource = {
+  id: string;
+  type?: string;
+  source?: string;
+  layout?: { ['text-field']?: unknown };
+  'source-layer'?: string;
+};
+
 /**
  * Dynamically add a fill-extrusion (3D) buildings layer.
  * Finds the correct source name by inspecting existing style layers.
@@ -57,13 +65,6 @@ function addBuildingsLayer(map: maplibregl.Map) {
     if (map.getLayer('3d-buildings')) return;
     const style = map.getStyle();
     const layers = style.layers ?? [];
-    type LayerWithSource = {
-      id: string;
-      type?: string;
-      source?: string;
-      layout?: { ['text-field']?: unknown };
-      'source-layer'?: string;
-    };
     const typedLayers = layers as LayerWithSource[];
 
     // Find the source name used by an existing building layer

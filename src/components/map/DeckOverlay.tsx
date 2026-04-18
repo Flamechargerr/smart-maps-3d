@@ -261,7 +261,7 @@ export default function DeckOverlay({ map, mode }: Props) {
       try {
         map.removeControl(overlay as unknown as maplibregl.IControl);
       } catch (error) {
-        console.warn('Deck overlay removal skipped:', error);
+        console.warn('Deck overlay already removed or unavailable:', error);
       }
     };
   }, [map]);
