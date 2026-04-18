@@ -1,5 +1,6 @@
 import { useRef, useState, useCallback, useEffect } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
+import type maplibregl from 'maplibre-gl';
 import {
   Navigation as NavIcon, Compass, Coffee, Fuel, Building2,
   Hotel, ShoppingBag, Landmark, Heart, Clock, Box, Hexagon, Zap, Sparkles
@@ -20,6 +21,18 @@ interface PlaceInfo {
   type?: string;
 }
 
+interface SearchResult {
+  lat: string;
+  lon: string;
+  display_name: string;
+  type?: string;
+}
+
+interface ExploreResult {
+  lat: string;
+  lon: string;
+}
+
 const EXPLORE_CHIPS = [
   { id: 'restaurants', label: 'Restaurants', icon: Coffee, color: '#ea4335' },
   { id: 'hotels', label: 'Hotels', icon: Hotel, color: '#4285f4' },
@@ -36,7 +49,7 @@ export default function App() {
   const [activeChip, setActiveChip] = useState<string | null>(null);
   const [showIntro, setShowIntro] = useState(true);
   const [deckMode, setDeckMode] = useState<DeckLayerMode>(null);
-  const [mapInstance, setMapInstance] = useState<any>(null);
+  const [mapInstance, setMapInstance] = useState<maplibregl.Map | null>(null);
   const [currentTime] = useState(() => {
     const d = new Date();
     return d.toLocaleTimeString('en-IN', { hour: '2-digit', minute: '2-digit', hour12: true });
@@ -49,7 +62,7 @@ export default function App() {
   }, []);
 
   // Search result → fly + marker
-  const handleSearchResult = useCallback((result: any) => {
+  const handleSearchResult = useCallback((result: SearchResult) => {
     const lat = parseFloat(result.lat);
     const lng = parseFloat(result.lon);
     mapRef.current?.stopOrbit();
@@ -105,9 +118,9 @@ export default function App() {
         `https://nominatim.openstreetmap.org/search?q=${encodeURIComponent(chipId)}&format=json&limit=8&viewbox=${center.lng-0.05},${center.lat+0.05},${center.lng+0.05},${center.lat-0.05}&bounded=1`,
         { headers: { 'Accept-Language': 'en' } }
       );
-      const data = await res.json();
+      const data: ExploreResult[] = await res.json();
       const chip = EXPLORE_CHIPS.find(c => c.id === chipId);
-      data.forEach((r: any, i: number) => {
+      data.forEach((r, i) => {
         setTimeout(() => {
           mapRef.current?.addMarker(parseFloat(r.lon), parseFloat(r.lat), chip?.color || '#4285f4', false);
         }, i * 120); // Staggered drop animation
@@ -149,6 +162,10 @@ export default function App() {
     mapRef.current?.setStyle(style);
   }, []);
 
+  const handleMapLoad = useCallback(() => {
+    setMapInstance(mapRef.current?.getMap() ?? null);
+  }, []);
+
   return (
     <div className="app-root">
       {/* ═══ FULL-SCREEN MAP ═══ */}
@@ -156,7 +173,7 @@ export default function App() {
         <MapComponent
           ref={mapRef}
           onMapClick={handleMapClick}
-          onMapLoad={() => setMapInstance(mapRef.current?.getMap() ?? null)}
+          onMapLoad={handleMapLoad}
         />
         {/* GPU-powered 3D visualization overlay */}
         <DeckOverlay map={mapInstance} mode={deckMode} />

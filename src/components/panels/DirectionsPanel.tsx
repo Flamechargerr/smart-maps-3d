@@ -13,10 +13,33 @@ interface GeoResult {
   lon: string;
 }
 
+type RouteProfile = 'driving' | 'cycling' | 'walking';
+
+interface OsrmStep {
+  maneuver?: {
+    instruction?: string;
+  };
+}
+
+interface OsrmRoute {
+  distance: number;
+  duration: number;
+  geometry: {
+    coordinates: number[][];
+  };
+  legs: Array<{
+    steps: OsrmStep[];
+  }>;
+}
+
+interface OsrmResponse {
+  routes?: OsrmRoute[];
+}
+
 export default function DirectionsPanel({ onClose, onRoute }: Props) {
   const [origin, setOrigin] = useState('');
   const [dest, setDest] = useState('');
-  const [profile, setProfile] = useState('driving');
+  const [profile, setProfile] = useState<RouteProfile>('driving');
   const [originResult, setOriginResult] = useState<GeoResult | null>(null);
   const [destResult, setDestResult] = useState<GeoResult | null>(null);
   const [originResults, setOriginResults] = useState<GeoResult[]>([]);
@@ -38,20 +61,33 @@ export default function DirectionsPanel({ onClose, onRoute }: Props) {
   const fetchRoute = async () => {
     if (!originResult || !destResult) return;
     setLoading(true);
-    const osrmProfile = profile === 'driving' ? 'car' : profile === 'cycling' ? 'bike' : 'foot';
     try {
-      const url = `https://router.project-osrm.org/route/v1/${osrmProfile}/${originResult.lon},${originResult.lat};${destResult.lon},${destResult.lat}?overview=full&geometries=geojson&steps=true`;
-      const res = await fetch(url);
-      const data = await res.json();
+      const profileCandidates: Record<RouteProfile, string[]> = {
+        driving: ['driving', 'car'],
+        cycling: ['cycling', 'bike'],
+        walking: ['walking', 'foot'],
+      };
+      let data: OsrmResponse | null = null;
+      for (const osrmProfile of profileCandidates[profile]) {
+        const url = `https://router.project-osrm.org/route/v1/${osrmProfile}/${originResult.lon},${originResult.lat};${destResult.lon},${destResult.lat}?overview=full&geometries=geojson&steps=true`;
+        const res = await fetch(url);
+        if (!res.ok) continue;
+        const candidate: OsrmResponse = await res.json();
+        if (candidate.routes?.length) {
+          data = candidate;
+          break;
+        }
+      }
+      if (!data) return;
       if (data.routes && data.routes.length > 0) {
         const route = data.routes[0];
         const km = (route.distance / 1000).toFixed(1);
         const mins = Math.round(route.duration / 60);
         const hrs = Math.floor(mins / 60);
         const duration = hrs > 0 ? `${hrs} hr ${mins % 60} min` : `${mins} min`;
-        const steps = route.legs[0].steps
-          .filter((s: any) => s.maneuver?.instruction)
-          .map((s: any) => s.maneuver.instruction)
+        const steps = (route.legs[0]?.steps ?? [])
+          .filter((s): s is OsrmStep & { maneuver: { instruction: string } } => Boolean(s.maneuver?.instruction))
+          .map((s) => s.maneuver.instruction)
           .slice(0, 8);
         setRouteInfo({ distance: `${km} km`, duration, steps });
         const coords = route.geometry.coordinates;
@@ -91,9 +127,9 @@ export default function DirectionsPanel({ onClose, onRoute }: Props) {
 
       <div className="dir-profiles">
         {[
-          { id: 'driving', icon: Car, label: 'Drive' },
-          { id: 'cycling', icon: Bike, label: 'Bike' },
-          { id: 'walking', icon: Footprints, label: 'Walk' }
+          { id: 'driving' as RouteProfile, icon: Car, label: 'Drive' },
+          { id: 'cycling' as RouteProfile, icon: Bike, label: 'Bike' },
+          { id: 'walking' as RouteProfile, icon: Footprints, label: 'Walk' }
         ].map(p => (
           <button
             key={p.id}

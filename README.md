@@ -90,6 +90,16 @@ src/
     └── App.css
 ```
 
+## Visual Showcase
+
+### Project Banner
+
+![Smart Maps 3D banner](./docs/images/smart-maps-banner.svg)
+
+### Architecture Snapshot
+
+![Smart Maps 3D architecture](./docs/images/smart-maps-architecture.svg)
+
 ## License
 
 MIT
