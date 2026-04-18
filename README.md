@@ -100,6 +100,20 @@ src/
 
 ![Smart Maps 3D architecture](./docs/images/smart-maps-architecture.svg)
 
+### Runtime Screenshots
+
+#### Main Explore UI
+
+![Smart Maps 3D main explore UI](./docs/images/app-home.png)
+
+#### Directions Panel
+
+![Smart Maps 3D directions panel](./docs/images/app-directions.png)
+
+#### Layer Selector
+
+![Smart Maps 3D layer selector](./docs/images/app-layers.png)
+
 ## License
 
 MIT
