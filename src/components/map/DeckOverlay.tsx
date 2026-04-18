@@ -16,12 +16,30 @@ import { MapboxOverlay } from '@deck.gl/mapbox';
 import { HexagonLayer } from '@deck.gl/aggregation-layers';
 import { ArcLayer, ScatterplotLayer } from '@deck.gl/layers';
 import { TripsLayer } from '@deck.gl/geo-layers';
+import type { Layer } from '@deck.gl/core';
 import type maplibregl from 'maplibre-gl';
+
+interface ActivityPoint {
+  position: [number, number];
+  weight: number;
+}
+
+interface ArcConnection {
+  source: [number, number];
+  target: [number, number];
+  color: [number, number, number];
+}
+
+interface TripData {
+  path: [number, number][];
+  timestamps: number[];
+  color: [number, number, number];
+}
 
 // ═══ MUMBAI DATA GENERATION ═══
 
 // Generate realistic scatter data around Mumbai landmarks
-function generateMumbaiActivityData(count: number) {
+function generateMumbaiActivityData(count: number): ActivityPoint[] {
   const hotspots = [
     { lng: 72.8347, lat: 18.9220, weight: 9 },  // Gateway of India
     { lng: 72.8296, lat: 18.9437, weight: 8 },  // Marine Drive
@@ -35,7 +53,7 @@ function generateMumbaiActivityData(count: number) {
     { lng: 72.8375, lat: 18.9538, weight: 7 },  // Girgaon Chowpatty
   ];
 
-  const points: Array<{ position: [number, number]; weight: number }> = [];
+  const points: ActivityPoint[] = [];
   for (let i = 0; i < count; i++) {
     const hotspot = hotspots[Math.floor(Math.random() * hotspots.length)];
     const jitter = 0.015;
@@ -51,7 +69,7 @@ function generateMumbaiActivityData(count: number) {
 }
 
 // Arc connections between Mumbai landmarks
-const MUMBAI_ARCS = [
+const MUMBAI_ARCS: ArcConnection[] = [
   { source: [72.8347, 18.9220], target: [72.8296, 18.9437], color: [66, 133, 244] },   // Gateway → Marine Drive
   { source: [72.8296, 18.9437], target: [72.8183, 19.0176], color: [234, 67, 53] },    // Marine Drive → Bandra
   { source: [72.8183, 19.0176], target: [72.8090, 19.0596], color: [251, 188, 4] },    // Bandra → Juhu
@@ -63,9 +81,9 @@ const MUMBAI_ARCS = [
 ];
 
 // Generate animated trip data (simulated taxi/auto routes)
-function generateTripData(): Array<{ path: number[][]; timestamps: number[]; color: number[] }> {
-  const trips: Array<{ path: number[][]; timestamps: number[]; color: number[] }> = [];
-  const routes = [
+function generateTripData(): TripData[] {
+  const trips: TripData[] = [];
+  const routes: Array<{ waypoints: [number, number][]; color: [number, number, number] }> = [
     // Route 1: Gateway → CST → Dadar
     { waypoints: [[72.8347, 18.9220], [72.8350, 18.9300], [72.8355, 18.9398], [72.8340, 18.9500], [72.8330, 18.9600], [72.8310, 18.9720]], color: [255, 200, 0] },
     // Route 2: Bandra → Worli → Haji Ali
@@ -101,7 +119,7 @@ interface Props {
 }
 
 export default function DeckOverlay({ map, mode }: Props) {
-  const overlayRef = useRef<any>(null);
+  const overlayRef = useRef<MapboxOverlay | null>(null);
   const animFrameRef = useRef<number | null>(null);
   const timeRef = useRef(0);
 
@@ -111,7 +129,7 @@ export default function DeckOverlay({ map, mode }: Props) {
   const updateLayers = useCallback((currentTime: number) => {
     if (!overlayRef.current || !mode) return;
 
-    const layers: any[] = [];
+    const layers: Layer[] = [];
 
     // ═══ 3D HEXAGON HEATMAP ═══
     if (mode === 'hexagon' || mode === 'all') {
@@ -119,9 +137,9 @@ export default function DeckOverlay({ map, mode }: Props) {
         new HexagonLayer({
           id: 'hexagon-layer',
           data: activityData.current,
-          getPosition: (d: any) => d.position,
-          getElevationWeight: (d: any) => d.weight,
-          getColorWeight: (d: any) => d.weight,
+           getPosition: (d: ActivityPoint) => d.position,
+           getElevationWeight: (d: ActivityPoint) => d.weight,
+           getColorWeight: (d: ActivityPoint) => d.weight,
           elevationScale: 25,
           extruded: true,
           radius: 200,
@@ -157,10 +175,10 @@ export default function DeckOverlay({ map, mode }: Props) {
         new ArcLayer({
           id: 'arc-layer',
           data: MUMBAI_ARCS,
-          getSourcePosition: (d: any) => d.source,
-          getTargetPosition: (d: any) => d.target,
-          getSourceColor: (d: any) => [...d.color, 200] as [number,number,number,number],
-          getTargetColor: (d: any) => [...d.color, 200] as [number,number,number,number],
+           getSourcePosition: (d: ArcConnection) => d.source,
+           getTargetPosition: (d: ArcConnection) => d.target,
+           getSourceColor: (d: ArcConnection) => [...d.color, 200] as [number,number,number,number],
+           getTargetColor: (d: ArcConnection) => [...d.color, 200] as [number,number,number,number],
           getWidth: 4,
           getHeight: 0.35,
           greatCircle: false,
@@ -178,9 +196,9 @@ export default function DeckOverlay({ map, mode }: Props) {
         new TripsLayer({
           id: 'trips-layer',
           data: tripData.current,
-          getPath: (d: any) => d.path,
-          getTimestamps: (d: any) => d.timestamps,
-          getColor: (d: any) => d.color,
+           getPath: (d: TripData) => d.path,
+           getTimestamps: (d: TripData) => d.timestamps,
+           getColor: (d: TripData) => d.color,
           opacity: 0.9,
           widthMinPixels: 4,
           jointRounded: true,
@@ -198,9 +216,9 @@ export default function DeckOverlay({ map, mode }: Props) {
         new ScatterplotLayer({
           id: 'scatter-layer',
           data: activityData.current.slice(0, 300),
-          getPosition: (d: any) => d.position,
-          getRadius: (d: any) => d.weight * 8,
-          getFillColor: (d: any) => {
+           getPosition: (d: ActivityPoint) => d.position,
+           getRadius: (d: ActivityPoint) => d.weight * 8,
+           getFillColor: (d: ActivityPoint) => {
             const t = d.weight / 10;
             return [
               Math.floor(66 + t * 180),
@@ -235,12 +253,16 @@ export default function DeckOverlay({ map, mode }: Props) {
       layers: []
     });
 
-    map.addControl(overlay as any);
+    map.addControl(overlay as unknown as maplibregl.IControl);
     overlayRef.current = overlay;
 
     return () => {
       if (animFrameRef.current) cancelAnimationFrame(animFrameRef.current);
-      try { map.removeControl(overlay as any); } catch {}
+      try {
+        map.removeControl(overlay as unknown as maplibregl.IControl);
+      } catch (error) {
+        console.warn('Deck overlay removal skipped:', error);
+      }
     };
   }, [map]);
 

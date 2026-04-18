@@ -1,9 +1,9 @@
 import { useEffect, useRef, useState, forwardRef, useImperativeHandle } from 'react';
 import maplibregl from 'maplibre-gl';
-import type { FillExtrusionLayerSpecification } from '@maplibre/maplibre-gl-style-spec';
+import type { FillExtrusionLayerSpecification, StyleSpecification } from '@maplibre/maplibre-gl-style-spec';
 import 'maplibre-gl/dist/maplibre-gl.css';
 
-const STYLES: Record<string, string | object> = {
+const STYLES: Record<MapStyle, string | StyleSpecification> = {
   default: 'https://tiles.openfreemap.org/styles/liberty',
   satellite: {
     version: 8,
@@ -57,17 +57,25 @@ function addBuildingsLayer(map: maplibregl.Map) {
     if (map.getLayer('3d-buildings')) return;
     const style = map.getStyle();
     const layers = style.layers ?? [];
+    type LayerWithSource = {
+      id: string;
+      type?: string;
+      source?: string;
+      layout?: { ['text-field']?: unknown };
+      'source-layer'?: string;
+    };
+    const typedLayers = layers as LayerWithSource[];
 
     // Find the source name used by an existing building layer
-    const existingBuildingLayer = layers.find(
-      (l: any) => l['source-layer'] === 'building' && (l.type === 'fill' || l.type === 'fill-extrusion' || l.type === 'line')
-    ) as any;
+    const existingBuildingLayer = typedLayers.find(
+      (l) => l['source-layer'] === 'building' && (l.type === 'fill' || l.type === 'fill-extrusion' || l.type === 'line')
+    );
 
     const sourceName: string = existingBuildingLayer?.source ?? 'openmaptiles';
 
     // Find the first symbol/label layer so we can insert buildings below labels
-    const labelLayerId = layers.find(
-      (l: any) => l.type === 'symbol' && l.layout?.['text-field']
+    const labelLayerId = typedLayers.find(
+      (l) => l.type === 'symbol' && l.layout?.['text-field']
     )?.id;
 
     map.addLayer(
@@ -239,10 +247,10 @@ const MapComponent = forwardRef<MapHandle, Props>(({ onMapClick, onMapLoad }, re
       if (map.getSource('route-line')) map.removeSource('route-line');
     },
     getMap() { return mapRef.current; },
-    setStyle(style) {
-      currentStyleRef.current = style;
-      mapRef.current?.setStyle(STYLES[style] as any);
-    },
+      setStyle(style) {
+        currentStyleRef.current = style;
+        mapRef.current?.setStyle(STYLES[style]);
+      },
     startOrbit() {
       const map = mapRef.current;
       if (!map) return;
@@ -273,7 +281,7 @@ const MapComponent = forwardRef<MapHandle, Props>(({ onMapClick, onMapLoad }, re
       pitch: 0,
       bearing: 0,
       fadeDuration: 300
-    } as any);
+    });
 
     // Navigation
     map.addControl(new maplibregl.NavigationControl({
@@ -356,7 +364,7 @@ const MapComponent = forwardRef<MapHandle, Props>(({ onMapClick, onMapLoad }, re
       if (routeAnimRef.current) cancelAnimationFrame(routeAnimRef.current);
       map.remove();
     };
-  }, []);
+  }, [onMapClick, onMapLoad]);
 
   return (
     <div className="map-wrapper">

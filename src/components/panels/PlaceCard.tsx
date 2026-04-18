@@ -15,9 +15,22 @@ interface Props {
   onDirections: () => void;
 }
 
+function makeStableNumber(seed: string, min: number, max: number, decimals = 0) {
+  let hash = 0;
+  for (let i = 0; i < seed.length; i++) {
+    hash = (hash << 5) - hash + seed.charCodeAt(i);
+    hash |= 0;
+  }
+  const normalized = (Math.abs(hash) % 10000) / 10000;
+  const value = min + (max - min) * normalized;
+  return decimals > 0 ? value.toFixed(decimals) : Math.floor(value).toString();
+}
+
 export default function PlaceCard({ place, onClose, onDirections }: Props) {
-  const rating = (3.5 + Math.random() * 1.5).toFixed(1);
-  const reviews = Math.floor(100 + Math.random() * 900);
+  const seed = `${place.name}-${place.lat}-${place.lng}`;
+  const rating = makeStableNumber(seed, 3.5, 5, 1);
+  const reviews = makeStableNumber(`${seed}-reviews`, 100, 1000);
+  const phoneSuffix = makeStableNumber(`${seed}-phone`, 1000, 10000);
   
   return (
     <motion.div
@@ -63,7 +76,7 @@ export default function PlaceCard({ place, onClose, onDirections }: Props) {
         </div>
         <div className="place-info-row">
           <Phone size={16} />
-          <span>+91 22 2284 {Math.floor(1000 + Math.random() * 9000)}</span>
+          <span>+91 22 2284 {phoneSuffix}</span>
         </div>
         <div className="place-info-row">
           <Globe size={16} />

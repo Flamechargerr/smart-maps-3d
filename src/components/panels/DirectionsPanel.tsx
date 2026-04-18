@@ -13,6 +13,27 @@ interface GeoResult {
   lon: string;
 }
 
+interface OsrmStep {
+  maneuver?: {
+    instruction?: string;
+  };
+}
+
+interface OsrmRoute {
+  distance: number;
+  duration: number;
+  geometry: {
+    coordinates: number[][];
+  };
+  legs: Array<{
+    steps: OsrmStep[];
+  }>;
+}
+
+interface OsrmResponse {
+  routes?: OsrmRoute[];
+}
+
 export default function DirectionsPanel({ onClose, onRoute }: Props) {
   const [origin, setOrigin] = useState('');
   const [dest, setDest] = useState('');
@@ -38,20 +59,21 @@ export default function DirectionsPanel({ onClose, onRoute }: Props) {
   const fetchRoute = async () => {
     if (!originResult || !destResult) return;
     setLoading(true);
-    const osrmProfile = profile === 'driving' ? 'car' : profile === 'cycling' ? 'bike' : 'foot';
     try {
+      const osrmProfile = profile as 'driving' | 'cycling' | 'walking';
       const url = `https://router.project-osrm.org/route/v1/${osrmProfile}/${originResult.lon},${originResult.lat};${destResult.lon},${destResult.lat}?overview=full&geometries=geojson&steps=true`;
       const res = await fetch(url);
-      const data = await res.json();
+      if (!res.ok) return;
+      const data: OsrmResponse = await res.json();
       if (data.routes && data.routes.length > 0) {
         const route = data.routes[0];
         const km = (route.distance / 1000).toFixed(1);
         const mins = Math.round(route.duration / 60);
         const hrs = Math.floor(mins / 60);
         const duration = hrs > 0 ? `${hrs} hr ${mins % 60} min` : `${mins} min`;
-        const steps = route.legs[0].steps
-          .filter((s: any) => s.maneuver?.instruction)
-          .map((s: any) => s.maneuver.instruction)
+        const steps = (route.legs[0]?.steps ?? [])
+          .filter((s): s is OsrmStep & { maneuver: { instruction: string } } => Boolean(s.maneuver?.instruction))
+          .map((s) => s.maneuver.instruction)
           .slice(0, 8);
         setRouteInfo({ distance: `${km} km`, duration, steps });
         const coords = route.geometry.coordinates;

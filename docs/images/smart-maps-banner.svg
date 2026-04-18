@@ -1,0 +1,33 @@
+<svg width="1600" height="720" viewBox="0 0 1600 720" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1600" y2="720" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0B1220"/>
+      <stop offset="1" stop-color="#1C2B4A"/>
+    </linearGradient>
+    <linearGradient id="card" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#5EA2FF" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#7EF2D5" stop-opacity="0.15"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="720" rx="30" fill="url(#bg)"/>
+  <circle cx="1400" cy="120" r="220" fill="#4D8DFF" fill-opacity="0.22"/>
+  <circle cx="210" cy="640" r="280" fill="#43E6B0" fill-opacity="0.12"/>
+
+  <rect x="90" y="90" width="1420" height="540" rx="28" fill="url(#card)" stroke="rgba(255,255,255,0.25)"/>
+
+  <text x="140" y="230" fill="white" font-size="84" font-family="Inter,Segoe UI,Arial,sans-serif" font-weight="700">Smart Maps 3D</text>
+  <text x="140" y="290" fill="#BBD6FF" font-size="34" font-family="Inter,Segoe UI,Arial,sans-serif">Production-focused 3D geospatial app with MapLibre + deck.gl + React</text>
+
+  <rect x="140" y="360" width="260" height="72" rx="16" fill="#4285F4"/>
+  <text x="185" y="406" fill="white" font-size="30" font-family="Inter,Segoe UI,Arial,sans-serif" font-weight="600">3D Mapping</text>
+
+  <rect x="430" y="360" width="300" height="72" rx="16" fill="#34A853"/>
+  <text x="475" y="406" fill="white" font-size="30" font-family="Inter,Segoe UI,Arial,sans-serif" font-weight="600">Live Routing</text>
+
+  <rect x="760" y="360" width="340" height="72" rx="16" fill="#F2994A"/>
+  <text x="805" y="406" fill="white" font-size="30" font-family="Inter,Segoe UI,Arial,sans-serif" font-weight="600">GPU Visuals</text>
+
+  <path d="M1115 445C1210 400 1290 340 1415 330" stroke="#7EF2D5" stroke-width="10" stroke-linecap="round"/>
+  <circle cx="1115" cy="445" r="10" fill="#7EF2D5"/>
+  <circle cx="1415" cy="330" r="10" fill="#7EF2D5"/>
+</svg>
